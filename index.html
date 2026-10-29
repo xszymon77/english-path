@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#0d1e2f" />
+<title>English Path — codzienna nauka angielskiego</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+:root{--dark:#102338;--dark2:#1b364a;--green:#258b77;--green2:#dff3e9;--warm:#faf9f5;--card:#fff;--line:#e8ecec;--muted:#75848b;--text:#193244;--purple:#7a6bc5;--orange:#e5a15c;--shadow:0 12px 35px rgba(23,49,70,.065)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font:15px/1.5 'DM Sans',Arial,sans-serif;background:var(--warm)}button,input,textarea,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.47}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #58bcb7;outline-offset:2px}h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-family:Outfit,'DM Sans',sans-serif;line-height:1.18;letter-spacing:-.025em}h1{font-size:34px;margin-bottom:9px}h2{font-size:24px;margin-bottom:7px}h3{font-size:19px;margin-bottom:12px}p{margin-bottom:12px}.muted{color:var(--muted)}.tiny{font-size:12px}.small{font-size:13px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-weight:800;font-size:11px;color:var(--green)}.app{display:grid;grid-template-columns:255px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;background:var(--dark);color:#e3edf0;display:flex;flex-direction:column;padding:30px 16px;z-index:10}.brand{display:flex;gap:12px;align-items:center;margin:0 9px 30px}.brand-icon{width:42px;height:42px;background:#cbede2;border-radius:15px;display:grid;place-items:center;color:#0c584d;font:800 22px Outfit}.brand strong{font-size:20px;letter-spacing:-.04em;color:#fff;font-family:Outfit}.brand small{display:block;color:#94abb6;font-size:11px;letter-spacing:.07em}.nav-name{padding:2px 14px 10px;font-size:10px;color:#87a2ae;text-transform:uppercase;font-weight:800;letter-spacing:.17em}.nav{display:flex;flex-direction:column;gap:5px}.nav button{width:100%;display:flex;gap:13px;align-items:center;text-align:left;border:none;border-radius:13px;padding:13px 15px;color:#b7cad1;background:transparent;font-weight:700}.nav button:hover{background:#18384d}.nav button.active{background:#d7f1e8;color:#0d574f}.nav button .ico{width:22px;text-align:center;font-size:18px}.sidebar-bottom{margin-top:auto;background:#203b4d;border:1px solid #2b4d60;border-radius:19px;padding:17px}.sidebar-bottom .progress-line{background:#3a5260}.sidebar-bottom .progress-line span{background:#a9dfbf}.mobilebar{display:none}.main{padding:28px 44px 80px;max-width:1480px;width:100%;margin:0 auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:33px}.topbar .label{font-weight:800;font-family:Outfit;font-size:17px}.today-date{font-size:13px;color:var(--muted)}.topright{display:flex;align-items:center;gap:12px}.pill{border-radius:25px;background:#e6f1ed;color:#1d7463;padding:8px 13px;font-weight:800;font-size:12px;white-space:nowrap}.avatar{width:41px;height:41px;display:grid;place-items:center;background:#e5dacb;color:#80664e;border-radius:13px;font-weight:800}.view{display:none;animation:appear .25s ease}.view.active{display:block}@keyframes appear{from{opacity:.6;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.intro{display:flex;justify-content:space-between;gap:24px;margin-bottom:24px;align-items:center}.intro p{color:var(--muted);max-width:710px}.section-split{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:28px 0 14px}.section-split h2,.section-split h3{margin:0}.section-split p{margin:4px 0 0;color:var(--muted);font-size:13px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px;margin-bottom:20px}.stat{background:var(--card);padding:21px 22px;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.stat-icon{font-size:22px;margin-bottom:10px}.stat .number{font:700 31px Outfit;color:var(--dark);letter-spacing:-.04em}.stat .caption{font-size:12px;color:var(--muted);font-weight:600}.hero{position:relative;background:#153d47;color:#f0fbfa;border-radius:22px;padding:30px 33px;overflow:hidden;box-shadow:0 18px 35px rgba(18,56,63,.12)}.hero:after{content:'✦';position:absolute;font:240px/1 Outfit;right:-20px;top:-76px;color:rgba(226,245,231,.065);transform:rotate(-10deg)}.hero>*{position:relative;z-index:1}.hero .eyebrow{color:#b0dec7}.hero h2{font-size:28px;max-width:580px;margin:7px 0 8px}.hero p{color:#c6dbdf;max-width:660px}.hero-bottom{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:23px}.progress-line{height:8px;background:#dce8e7;border-radius:10px;overflow:hidden}.progress-line span{height:100%;background:#2c967b;display:block;border-radius:10px;transition:width .35s}.hero .progress-line{flex:1;max-width:420px;background:#395d60}.hero .progress-line span{background:#b8e6b6}.card{border:1px solid var(--line);border-radius:19px;background:var(--card);padding:24px;box-shadow:var(--shadow)}.two-cols{display:grid;grid-template-columns:1.6fr 1fr;gap:18px}.word-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.word-card{border:1px solid var(--line);background:#fff;border-radius:17px;padding:20px;min-height:222px;display:flex;flex-direction:column;transition:transform .18s,border-color .18s}.word-card:hover{transform:translateY(-2px);border-color:#b5d8cf}.word-sense+.word-sense{border-top:1px solid #e4eeea;margin-top:10px;padding-top:8px}.word-card.done{background:#f5fbf8;border-color:#cbe6db}.word-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.lvl{display:inline-block;background:#eef2f8;color:#5a7094;padding:4px 9px;border-radius:6px;font-size:11px;font-weight:800}.lvl.A1{background:#e5f5ec;color:#318367}.lvl.A2{background:#e4f1fd;color:#437bb3}.lvl.B1{background:#f2ebff;color:#745bb5}.lvl.B2{background:#ffefdf;color:#b27330}.lvl.C1,.lvl.C2{background:#fbe9ea;color:#ad5662}.icon-btn{border:none;background:#f1f5f4;color:#49726d;border-radius:9px;padding:6px 9px;font-weight:700}.word-en{font:700 25px Outfit;color:#143a45;margin:16px 0 1px;overflow-wrap:anywhere}.word-ipa{font-size:12px;color:#89979b;min-height:21px}.word-pl{color:#306a62;font-weight:700;margin:12px 0 4px}.word-example{font-size:12px;color:var(--muted);font-style:italic;margin:3px 0 12px}.word-actions{margin-top:auto;display:flex;gap:7px;flex-wrap:wrap}.btn{border:1px solid #dbe7e2;border-radius:11px;background:#fff;padding:10px 14px;font-size:13px;font-weight:800;color:#276c5d;transition:background .15s;white-space:normal}.btn:hover{background:#eef7f4}.btn.primary{background:#278d79;border-color:#278d79;color:#fff}.btn.primary:hover{background:#1d7362}.btn.dark{background:#163747;color:#fff;border-color:#163747}.btn.ghost{background:transparent;color:#6d8582}.btn.smallbtn{padding:7px 10px;font-size:12px}.btn:disabled{opacity:.5}.done-text{font-weight:800;font-size:13px;color:#237f67}.note{background:#f0f7f3;color:#497d6e;border-radius:14px;padding:14px 17px;font-size:13px}.orange-note{background:#fff6eb;color:#93632c}.accent-note{background:#f0effa;color:#62529b}.plan-mini{display:flex;flex-direction:column;gap:15px}.plan-mini .item{display:flex;gap:13px;align-items:flex-start}.plan-mini .step{width:29px;height:29px;flex-shrink:0;display:grid;place-items:center;border-radius:10px;background:#e8f3ed;color:#2e8169;font-weight:800}.plan-mini .item strong{display:block}.plan-mini .item p{font-size:12px;color:var(--muted);margin:1px 0}.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:17px}.search,.select,.textinput,.bigtext{border:1px solid #dae4e2;padding:11px 13px;border-radius:11px;background:#fff;color:var(--text);min-width:0}.search{flex:1;min-width:210px}.select{min-width:135px}.full{width:100%}.lexicon{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.lex-row{display:flex;align-items:center;gap:15px;border:1px solid var(--line);border-radius:13px;padding:12px 15px;min-width:0;background:white}.lex-row .lex-content{flex:1;min-width:0}.lex-row strong{color:#193d4b}.lex-row .meaning{color:#61777b;font-size:12px;overflow-wrap:anywhere}.lex-row .minor{color:#91a0a6;font-size:11px}.lex-row .btn{flex-shrink:0}.locked{opacity:.66}.grammar-layout{display:grid;grid-template-columns:255px minmax(0,1fr);gap:17px}.grammar-list{display:flex;flex-direction:column;gap:8px}.grammar-tab{display:flex;align-items:center;gap:12px;text-align:left;padding:13px;border-radius:12px;border:1px solid transparent;background:transparent;color:#647d81;font-weight:700}.grammar-tab span{height:28px;width:28px;display:grid;place-items:center;background:#e8eeed;border-radius:9px;font-size:12px;flex-shrink:0}.grammar-tab.active{background:#e3f3ed;color:#176a58;border-color:#cce3d9}.grammar-tab.active span{background:#c5e8d8}.grammar-example{border-left:3px solid #5aa997;background:#f4faf7;padding:13px 17px;border-radius:0 11px 11px 0;margin:16px 0}.grammar-example b{color:#265c52}.grammar-example em{display:block;color:#748b85;font-size:13px}.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.mini-formula{padding:14px;background:#f5f8f8;border-radius:13px;font-size:13px;overflow-wrap:anywhere}.mini-formula .eyebrow{font-size:10px;margin-bottom:7px}.mini-formula b{color:#244e58}.quiz{border:1px solid #e5ebe8;border-radius:14px;padding:19px;margin-top:15px}.quiz .question{font-weight:800;font-size:16px;margin-bottom:13px}.quiz-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.option{background:white;border:1px solid #dfe8e7;border-radius:10px;text-align:left;padding:10px;color:#355b64;font-size:13px}.option:hover{background:#f0f6f3}.option.correct{border-color:#7ecaae;background:#eaf9ee;color:#287157}.option.incorrect{border-color:#e9a1a3;background:#fff0ef;color:#aa565b}.feedback{font-size:13px;color:#4d7468;margin-top:12px;font-weight:700}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:19px}.chip{border:1px solid #dae5e1;border-radius:30px;padding:9px 15px;background:white;font-weight:800;color:#647d7a;font-size:13px}.chip.active{background:#1f796c;color:white;border-color:#1f796c}.phrase-card{padding:19px;border:1px solid #e8eeeb;border-radius:15px;background:white;margin-bottom:12px}.phrase-card strong{font-size:17px;color:#20454b}.phrase-card .translation{color:#24866e;font-weight:700}.phrase-card .example{border-left:2px solid #b6dacf;padding-left:12px;margin-top:11px;color:#526f74;font-size:13px}.phrase-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}.phrase-search{flex:1;min-width:220px}.phrase-search input,.phrase-tools select{width:100%;background:white;border:1px solid #dfe8e4;border-radius:12px;padding:11px 14px;color:var(--text)}.phrase-tools select{width:auto;max-width:200px}.phrase-card.completed{background:#f1faf5;border-color:#b5ddca}.phrase-card .phrase-number{font-size:12px;color:var(--muted);margin-bottom:6px}.phrase-card .phrase-actions{display:flex;gap:6px;flex-shrink:0}.phrase-card .phrase-mark{border:1px solid #cfe5dc;border-radius:9px;padding:6px 9px;background:#fff;color:#277b6d;font-size:12px;font-weight:800}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.phrase-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.scenario-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}.scenario{padding:20px;border:1px solid var(--line);background:#fff;border-radius:16px;text-align:left;color:#3c6870}.scenario.active{border-color:#63ae97;background:#eaf8f1}.scenario .emoji{font-size:24px;display:block;margin-bottom:9px}.scenario strong{display:block;color:var(--dark)}.script-line{display:flex;align-items:start;gap:11px;margin-bottom:10px}.script-role{font-size:11px;font-weight:800;color:#2c9375;background:#edf7f1;padding:5px 8px;border-radius:8px;flex-shrink:0}.script-role.you{background:#f4effe;color:#7e60b4}.script-body{flex:1}.script-body .english{font-weight:700}.script-body .polish{color:#85999b;font-size:12px}.bigtext{width:100%;min-height:130px;resize:vertical}.weekly{display:flex;align-items:end;gap:13px;height:166px;margin:18px 0 8px}.bar-col{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:8px;height:100%;flex:1}.bar{width:100%;max-width:41px;min-height:6px;background:#b7dcd0;border-radius:8px 8px 4px 4px;transition:height .25s}.bar.today{background:#2b947b}.bar-day{font-size:11px;color:#8da09d;font-weight:700}.level-row{display:grid;grid-template-columns:45px minmax(0,1fr) 90px;align-items:center;gap:13px;margin:16px 0}.level-row strong{font-size:13px}.level-row .small{font-size:12px;color:#8c9da0;text-align:right}.empty{border:1px dashed #cfe2dc;border-radius:15px;padding:25px;text-align:center;color:#76918c;background:#fcfffd}.hidden{display:none!important}.footnote{margin-top:26px;color:#8da09f;font-size:12px}.answer{padding:10px;border:1px solid #e0ebe6;background:#f3f9f5;border-radius:11px;margin-top:11px;color:#446c62}.toast{position:fixed;bottom:22px;right:24px;background:#183c46;color:#fff;padding:13px 20px;border-radius:13px;z-index:30;box-shadow:0 9px 29px #163f4c40;opacity:0;pointer-events:none;transform:translateY(15px);transition:.25s}.toast.show{opacity:1;transform:none}.spinner{display:inline-block;width:14px;height:14px;border:2px solid #d7f0e4;border-right-color:#2b8b78;border-radius:50%;animation:spin .9s linear infinite;vertical-align:-2px}@keyframes spin{to{transform:rotate(360deg)}}.linklike{color:#247e69;text-decoration:underline;text-underline-offset:3px}.divider{height:1px;background:var(--line);margin:18px 0}.hide-mobile{display:inline}.badge-source{font-size:11px;background:#f1f4f4;color:#7a8b8c;border-radius:9px;padding:6px 9px}.day-complete{background:#e8f6eb;color:#237b57;padding:15px;border-radius:13px;font-weight:800}.unlearned-pane{border:1px solid #eadcc7;border-radius:17px;padding:20px;background:#fffdf9;margin-top:21px}
+.review-gate{background:#fff;border:1px solid #cce4d9;border-radius:22px;padding:26px 28px;margin-bottom:22px;box-shadow:var(--shadow)}.review-gate h2{margin:7px 0 9px}.review-gate .eyebrow{color:#1d8470}.review-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;flex-wrap:wrap}.review-questions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:17px}.review-choice{background:#f8fbfa;border:1px solid #d7e8e1;border-radius:12px;padding:13px 10px;font-weight:750;color:#265e5a;text-align:center;white-space:normal}.review-choice:hover{background:#e9f8f0}.review-choice.mistake{border-color:#e7a6a6;background:#fff1ef;color:#98575a}.review-progress{background:#edf3f0;border-radius:12px;height:9px;overflow:hidden;margin-top:14px}.review-progress span{background:#2e987b;display:block;height:100%;transition:width .25s}.review-complete{background:#e9f8ef;border-radius:15px;padding:17px 18px;color:#23755b;margin-bottom:20px}.review-complete strong{display:block;font-size:17px}.extra-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.extra-phrase{padding:15px;border-radius:13px;background:#f6faf8;border:1px solid #d9e9e1}.extra-phrase strong{display:block;color:#1f514c}.extra-phrase em{display:block;color:#728b85;font-size:12px;margin-top:8px}.extra-phrase .btn{margin-top:10px}.extra-write{min-height:95px;width:100%;margin:11px 0}.extra-header{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap}.extra-header h3{margin:0}.extra-card{margin-top:14px}.lesson-locked{display:none!important}
+@media(max-width:630px){.review-questions,.extra-tiles{grid-template-columns:1fr}.review-gate{padding:19px}}
+@media (max-width:1120px){.main{padding:25px}.word-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.two-cols{grid-template-columns:1fr}.phrase-grid{grid-template-columns:1fr}.scenario-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:810px){.app{display:block;padding-bottom:70px}.sidebar{display:none}.main{padding:20px 15px 46px}.topbar{margin-bottom:23px}.topbar .label{display:none}.mobilebar{position:fixed;bottom:0;left:0;right:0;display:flex;align-items:center;justify-content:space-around;background:#102b3c;border-top:1px solid #2e4b58;z-index:20;padding:7px 2px max(8px,env(safe-area-inset-bottom))}.mobilebar button{background:none;border:0;color:#a6bcc3;display:flex;flex-direction:column;align-items:center;gap:1px;font-size:10px;padding:3px}.mobilebar button.active{color:#a9ecd4}.mobilebar .ico{font-size:20px}.intro h1{font-size:29px}.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat{padding:17px}.hero{padding:25px}.word-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.word-card{padding:15px;min-height:218px}.grammar-layout{grid-template-columns:1fr}.grammar-list{flex-direction:row;overflow:auto;padding:2px 0 8px}.grammar-tab{min-width:175px}.lexicon{grid-template-columns:1fr}.scenario-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.word-grid,.stats{grid-template-columns:1fr 1fr}.word-en{font-size:21px}.word-actions .btn{font-size:11px;padding:7px 8px}.three{grid-template-columns:1fr}.quiz-options{grid-template-columns:1fr}.word-card{min-height:242px}.word-example{font-size:11px}.intro{align-items:start}.intro h1{font-size:27px}.topright .pill{display:none}.scenario-grid{grid-template-columns:1fr 1fr}.scenario{padding:14px}.hero h2{font-size:24px}.hero-bottom{gap:9px}}
+
+.daily-vocab-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.daily-vocab-actions .smallbtn{font-size:12px;white-space:nowrap}
+@media(max-width:760px){.daily-vocab-actions{justify-content:flex-start}}
+/* Ustawienia wymowy — nagrania słownikowe (online) + lektor systemowy. */
+.pron-panel{margin:2px 0 23px;background:linear-gradient(110deg,#e9f7f1,#f4f8fc);border:1px solid #cfe6df;border-radius:19px;padding:19px 22px}
+.pron-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.pron-heading h2{font-size:19px;margin:0 0 4px}
+.pron-heading p{font-size:12px;color:#617982;margin:0;max-width:720px}
+.pron-controls{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin-top:14px}
+.pron-controls label{font-size:11px;font-weight:800;letter-spacing:.015em;color:#426b68;display:grid;gap:4px}
+.pron-controls .select{padding:8px 11px;min-width:130px;max-width:260px;font-size:13px}
+.pron-controls .pron-source{font-size:12px;display:flex;align-items:center;flex-direction:row;gap:7px;letter-spacing:0;max-width:270px;padding:8px 0}
+.pron-source input{accent-color:var(--green);width:16px;height:16px}
+.pron-status{font-size:12px;margin-top:12px;color:#527477;min-height:17px}
+.audio-inline{border:0;background:transparent;color:#247b6b;font-weight:700;font-size:12px;padding:3px 5px;cursor:pointer;border-radius:6px}
+.audio-inline:hover{background:#e5f4ee}
+.audio-inline:focus-visible{outline:2px solid #258b77;outline-offset:1px}
+.speak-btn{flex-shrink:0}
+.word-example .audio-inline{margin-left:4px}
+.pron-help{margin-top:10px;padding:12px 14px;background:#fff7e7;color:#815a2a;border:1px solid #f0d7a7;border-radius:10px;font-size:12px}
+.pron-help .btn{margin:8px 8px 8px 0}
+.pron-test-buttons{display:flex;gap:6px;flex-wrap:wrap}
+.pron-status{font-weight:600}
+@media(max-width:760px){.pron-panel{padding:16px}.pron-controls label:not(.pron-source){flex:1 1 130px}.pron-controls select{max-width:100%;width:100%}}
+
+/* Synchronizacja Firebase – panel i stan połączenia */
+.cloud-panel{display:flex;justify-content:space-between;align-items:center;gap:18px;background:#eef6f2;border:1px solid #cce4d9;border-radius:18px;padding:16px 19px;margin:0 0 20px;flex-wrap:wrap}
+.cloud-panel h3{font-size:17px;margin:0 0 3px}
+.cloud-panel p{font-size:12px;color:#54736c;margin:0;max-width:700px}
+.cloud-panel .cloud-buttons{display:flex;gap:8px;flex-wrap:wrap}
+.cloud-panel .cloud-indicator{display:inline-block;width:9px;height:9px;border-radius:50%;background:#b4b9b8;margin-right:6px}
+.cloud-panel .cloud-indicator.ok{background:#248d70}.cloud-panel .cloud-indicator.warn{background:#d6a34c}
+.cloud-panel .cloud-indicator.error{background:#c76b66}
+@media(max-width:650px){.cloud-panel{padding:15px}.cloud-panel .cloud-buttons{width:100%}.cloud-panel .cloud-buttons .btn{flex:1}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><div class="brand-icon">E<span style="font-size:15px">✦</span></div><div><strong>English Path</strong><small>YOUR DAILY ENGLISH</small></div></div>
+ <div class="nav-name">Twoja nauka</div>
+ <nav class="nav" id="nav">
+  <button data-view="today" class="active"><span class="ico">⌂</span>Dzisiejsza lekcja</button>
+  <button data-view="words"><span class="ico">▤</span>Baza słówek</button>
+  <button data-view="grammar"><span class="ico">✍</span>Gramatyka</button>
+  <button data-view="phrases"><span class="ico">❞</span>Zwroty i wyrażenia</button>
+  <button data-view="practice"><span class="ico">☏</span>Angielski w praktyce</button>
+  <button data-view="progress"><span class="ico">▥</span>Moje postępy</button>
+ </nav>
+ <div class="sidebar-bottom"><span class="eyebrow" style="color:#a6d9c4">Twój cel</span><div style="display:flex;justify-content:space-between;margin:9px 0"><strong>6 słówek dziennie</strong><strong id="sideNum">0/6</strong></div><div class="progress-line"><span id="sideBar" style="width:0%"></span></div><div class="tiny" style="color:#b6cacd;margin-top:11px">Małe kroki. Duży postęp. ✨</div></div>
+</aside>
+<div class="mobilebar" id="mobilenav">
+ <button data-view="today" class="active"><span class="ico">⌂</span>Dzisiaj</button><button data-view="words"><span class="ico">▤</span>Słówka</button><button data-view="grammar"><span class="ico">✍</span>Czasy</button><button data-view="phrases"><span class="ico">❞</span>Frazy</button><button data-view="practice"><span class="ico">☏</span>Praktyka</button><button data-view="progress"><span class="ico">▥</span>Postęp</button>
+</div>
+<main class="main">
+<header class="topbar"><div class="label">Twoja przestrzeń do nauki <span style="color:#2b9a80">✦</span></div><div class="topright"><span id="dateLabel" class="today-date"></span><span class="pill" id="headerLevel">📘 Poziom A1</span><span class="avatar">EN</span></div></header>
+<section class="view active" id="view-today"><div class="intro"><div><span class="eyebrow">Witaj ponownie 👋</span><h1>Każdy dzień to krok naprzód.</h1><p>Najpierw krótka powtórka z poprzedniego dnia, później 6 nowych słówek i zmienne ćwiczenia. Zaznaczone jako nauczone nie wrócą do nowych lekcji.</p></div></div>
+<section class="cloud-panel" id="cloudPanel" aria-label="Synchronizacja postępu">
+ <div><h3>☁ Twoje postępy na każdym urządzeniu</h3><p id="cloudStatus" aria-live="polite"><span class="cloud-indicator"></span>Synchronizacja wymaga jednorazowej konfiguracji Firebase. Do tego czasu nauka działa lokalnie.</p></div>
+ <div class="cloud-buttons"><button class="btn primary" id="cloudLogin" type="button" onclick="englishCloudSignIn()">Zaloguj przez Google</button><button class="btn" type="button" id="cloudRetry" onclick="englishCloudReconnect()" hidden>↻ Ponów synchronizację</button><button class="btn" type="button" id="cloudLogout" onclick="englishCloudSignOut()" hidden>Wyloguj</button></div>
+</section>
+<div class="stats" id="dashboardStats"></div>
+<div class="pron-panel" id="pronPanel">
+ <div class="pron-heading"><div><h2>🔊 Angielska wymowa — odsłuchaj i powtórz</h2><p>Słówka: nagranie słownikowe (online), jeśli dostępne. Zdania i zwroty: tylko angielski głos przeglądarki — nigdy automatycznie polski.</p></div><div class="pron-test-buttons"><button class="btn smallbtn" type="button" onclick="testDictionaryRecording()">▶ Test nagrania</button><button class="btn smallbtn" type="button" onclick="testPronunciation()">▶ Test lektora</button></div></div>
+ <div class="pron-controls">
+  <label>Akcent <select class="select" id="pronAccent" onchange="changePronunciation()"><option value="en-GB">🇬🇧 Brytyjski</option><option value="en-US">🇺🇸 Amerykański</option></select></label>
+  <label>Głos lektora <select class="select" id="pronVoice" onchange="changePronunciation()"><option value="auto">Automatyczny (najlepszy dostępny)</option></select></label>
+  <label>Tempo <select class="select" id="pronRate" onchange="changePronunciation()"><option value="0.76">Wolne · 0,76×</option><option value="0.9" selected>Do nauki · 0,9×</option><option value="1">Normalne · 1×</option><option value="1.12">Szybsze · 1,12×</option></select></label>
+  <label class="pron-source"><input id="pronRecorded" type="checkbox" checked onchange="changePronunciation()"/> Korzystaj z nagrań słownikowych, jeśli są dostępne</label>
+  <button class="btn smallbtn" type="button" onclick="stopPronunciation()">■ Zatrzymaj</button>
+ </div><div id="pronStatus" role="status" aria-live="polite" class="pron-status">Wybierz 🔊 przy słowie, zwrocie lub zdaniu, aby je usłyszeć.</div>
+ <div id="pronHelp" class="pron-help hidden"><strong>Nie ma angielskiego lektora?</strong> W systemie Windows otwórz <b>Ustawienia → Czas i język → Mowa → Zarządzaj głosami / Dodaj głosy</b>, zainstaluj głos English (United Kingdom lub United States), zamknij i uruchom ponownie przeglądarkę. <button type="button" class="btn smallbtn" onclick="refreshPronunciationVoices()">↻ Wykryj głosy ponownie</button><div class="tiny">Nagrania pojedynczych słów mogą działać także bez zainstalowanego lektora, ale potrzebują internetu.</div></div>
+</div>
+<div id="reviewHost" aria-live="polite"></div>
+<div id="lessonContent" class="lesson-locked">
+<div class="hero"><span class="eyebrow">PLAN NA DZISIAJ</span><h2>Powtórka za Tobą? Czas na 6 nowych słówek!</h2><p id="heroSub">Ucz się w swoim tempie. Nowy zestaw pojawi się kolejnego dnia.</p><div class="hero-bottom"><strong id="heroCount">0 z 6 opanowanych</strong><div class="progress-line"><span id="heroBar" style="width:0%"></span></div><button class="btn" onclick="navigate('practice')">Ćwicz w praktyce ↗</button></div></div>
+<div class="section-split"><div><h2>Twoje 6 słówek</h2><p>Słówka są mieszane z różnych liter, tematów i poziomów A1–B1. Kliknij „Pokaż znaczenie”, odsłuchaj wymowę i zaznacz, gdy opanujesz słowo.</p></div><div class="daily-vocab-actions"><span id="sourceTag" class="badge-source">Ładowanie słownictwa…</span><button id="reshuffleWords" class="btn smallbtn" type="button" onclick="reshuffleToday()" title="Zmień dzisiejszy zestaw, zanim oznaczysz pierwsze słówko jako nauczone">🔀 Wymieszaj zestaw</button></div></div><div class="word-grid" id="todayWords"></div><div id="olderBox"></div>
+<div class="section-split"><div><h3>Co jeszcze dzisiaj?</h3><p>Codziennie inny zestaw: gramatyka, phrasal verbs, idiomy, kolokacje i praktyczne sytuacje.</p></div></div>
+<div class="two-cols"><div class="card" id="dailyExtra"></div><div class="card"><div class="eyebrow">Ostatnie 7 dni</div><h3 style="margin-top:9px">Twoja regularność</h3><div id="miniWeekly" class="weekly"></div><div class="small muted">Każde zaznaczone słowo lub wykonane ćwiczenie liczy się jako aktywny dzień.</div></div></div></div></section>
+<section class="view" id="view-words"><div class="intro"><div><span class="eyebrow">Twój słownik</span><h1>Baza słówek</h1><p>Szukaj znaczeń, filtruj poziomy A1–C2 i oznaczaj słowa, które już znasz. Nauczone słowa zostają w bazie, ale nie wracają do zestawu nowych słówek.</p></div></div><div class="card"><div id="baseStatus" class="note" style="margin-bottom:18px">Ładowanie pełnej bazy A1–B2…</div><div class="filters"><input class="search" id="wordSearch" placeholder="🔎 Szukaj słówka lub tłumaczenia…" aria-label="Szukaj słów"/><select class="select" id="wordLevel"><option value="ALL">Wszystkie poziomy</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option>C2</option></select><select class="select" id="wordStatus"><option value="all">Wszystkie</option><option value="learned">Nauczone</option><option value="new">Do nauki</option></select></div><div id="wordResultsCount" class="tiny muted" style="margin-bottom:12px"></div><div class="lexicon" id="wordResults"></div><div style="text-align:center;margin-top:17px"><button id="showMoreWords" class="btn" onclick="loadMoreWords()">Pokaż kolejne</button></div></div></section>
+<section class="view" id="view-grammar"><div class="intro"><div><span class="eyebrow">Gramatyka bez stresu</span><h1>Wszystkie najważniejsze czasy</h1><p>W dokładnie ustalonej kolejności. Każdy temat zawiera zastosowanie, budowę zdań, przykłady i ćwiczenia z odpowiedzią.</p></div></div><div class="grammar-layout"><div class="card" style="padding:14px;align-self:start"><div class="eyebrow" style="padding:9px 10px 12px">Kolejność nauki</div><div class="grammar-list" id="grammarTabs"></div></div><div class="card" id="grammarContent"></div></div></section>
+<section class="view" id="view-phrases"><div class="intro"><div><span class="eyebrow">Naturalny angielski</span><h1>Zwroty i wyrażenia</h1><p>Phrasal verbs, idiomy i kolokacje w autorskich, praktycznych zdaniach z tłumaczeniem.</p></div></div><div class="chips" id="phraseTabs"><button class="chip active" data-category="phrasal">Phrasal verbs</button><button class="chip" data-category="idioms">Idiomy</button><button class="chip" data-category="collocations">Kolokacje</button></div><div id="phraseIntro" class="note" style="margin-bottom:18px"></div>
+<div class="phrase-tools">
+<label class="phrase-search"><span class="sr-only">Wyszukaj zwrot</span><input id="phraseSearch" type="search" placeholder="Szukaj zwrotu lub tłumaczenia…" autocomplete="off"></label>
+<select id="phraseFilter" aria-label="Filtr opanowania"><option value="all">Wszystkie</option><option value="todo">Do nauczenia</option><option value="done">Nauczone</option></select>
+<span id="phraseCounter" class="small muted"></span></div>
+<div class="phrase-grid" id="phraseCards"></div><div class="small muted" style="margin-top:12px">Wybór zwrotów: <a class="linklike" href="https://speakingo.com/lista-najpopularniejszych-phrasal-verbs-angielski-b1-b2-tabelka/" target="_blank" rel="noopener noreferrer">Speakingo — 240 phrasal verbs</a>. Objaśnienia i zdania zostały opracowane na potrzeby English Path.</div><div class="more-row"><button id="morePhrases" class="btn hidden" onclick="loadMorePhrases()">Pokaż kolejne zwroty</button></div></section>
+<section class="view" id="view-practice"><div class="intro"><div><span class="eyebrow">Speak with confidence</span><h1>Angielski w praktyce</h1><p>Ćwicz zdania, których faktycznie używa się w rozmowie. Przeczytaj dialog i napisz własną wypowiedź.</p></div></div><div class="scenario-grid" id="scenarioTabs"></div><div class="two-cols"><div class="card"><span class="eyebrow">Mini-dialog</span><h2 id="scenarioTitle" style="margin-top:10px"></h2><p class="muted" id="scenarioDesc"></p><div id="scenarioDialog"></div><button class="btn" onclick="speakDialogue()">🔊 Odsłuchaj angielski</button></div><div class="card"><span class="eyebrow">Twoja kolej</span><h2 style="margin-top:10px">Spróbuj odpowiedzieć</h2><p id="scenarioTask" class="muted"></p><textarea class="bigtext" id="practiceAnswer" placeholder="Write your answer in English…"></textarea><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><button class="btn primary" onclick="savePractice()">Zapisz ćwiczenie ✓</button><button class="btn" onclick="toggleModel()" id="modelButton">Pokaż przykład</button></div><div id="practiceModel" class="answer hidden"></div><p class="small muted" style="margin-top:15px">Odpowiedź zapisuje się w przeglądarce. To ćwiczenie pisemne bez automatycznej oceny poprawności.</p></div></div></section>
+<section class="view" id="view-progress"><div class="intro"><div><span class="eyebrow">Twoje osiągnięcia</span><h1>Moje postępy</h1><p>Sprawdzaj, jak wiele już potrafisz, oraz zachowuj kopię swoich wyników.</p></div></div><div class="stats" id="progressStats"></div><div class="two-cols"><div class="card"><span class="eyebrow">Regularność</span><h3 style="margin-top:8px">Ostatni tydzień</h3><div id="progressWeekly" class="weekly"></div><div class="small muted">Liczba słówek opanowanych danego dnia.</div></div><div class="card"><span class="eyebrow">Ścieżka poziomów</span><h3 style="margin-top:8px">Postęp A1 → C2</h3><div id="levelProgress"></div><div class="small muted">Najpierw A1, potem A2, B1, B2, C1 i C2. Następny poziom uruchamia się po opanowaniu poprzedniego.</div></div></div><div class="section-split"><h3>Historia aktywności — 28 dni</h3></div><div class="card"><div id="activityCalendar" style="display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px"></div></div><div class="section-split"><h3>Twoje dane i kopie zapasowe</h3></div><div class="card"><p class="small muted">Postęp zapisuje się lokalnie, a po konfiguracji Firebase i zalogowaniu — także <b>w chmurze</b> i na innych urządzeniach. Przed pierwszym przeniesieniem postępów ze starego pliku HTML wykonaj eksport (.json), a potem importuj go już na opublikowanej stronie. Eksport pozostaje dodatkową kopią zapasową.</p><div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn primary" onclick="exportProgress()">⬇ Eksportuj postęp (.json)</button><label class="btn" style="cursor:pointer">⬆ Importuj postęp<input type="file" id="importFile" accept="application/json,.json" class="hidden" /></label><button class="btn" onclick="retryDownload()">↻ Odśwież bazę słówek</button><label class="btn" style="cursor:pointer">Wczytaj pełną bazę z pliku data.json<input type="file" id="importWords" accept="application/json,.json" class="hidden" /></label><button class="btn" style="color:#b75d5d" onclick="resetProgress()">Wyczyść postęp</button></div><div class="note" style="margin-top:15px">Pełna baza (3805 oryginalnych wpisów A1–B2) pochodzi z publicznego projektu <a href="https://bartekstefen.github.io/oxford3000-nauka/" target="_blank" rel="noopener noreferrer" class="linklike">Słówka 3000</a> i jest pobierana bezpośrednio z projektu przy pierwszym uruchomieniu (potem przechowywana lokalnie do nauki offline). Uzupełniająca lista C1–C2 to przykładowe słówka dodane do tej aplikacji, nie część oryginalnej bazy.</div></div></section>
+<footer class="footnote">English Path · Ucz się spokojnie, regularnie i we własnym tempie. W zakładce „Moje postępy” możesz również pobrać kopię zapasową danych.</footer>
+</main></div><div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script>
+// Podstawowe działania zawsze dostępne; moduł Firebase nadpisuje te funkcje po załadowaniu.
+window.englishCloudSignIn=()=>alert('Najpierw skonfiguruj Firebase i opublikuj stronę przez HTTPS, a potem odśwież stronę.');
+window.englishCloudSignOut=()=>{};
+window.englishCloudReconnect=()=>{};
+</script>
+<script>
+'use strict';
+const KEY='english_path_progress_v1', CACHE='english_path_oxford_v2_all_entries';
+const LEVELS=['A1','A2','B1','B2','C1','C2'];
+const TODAY=()=>{let d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
+const esc=(s)=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
+const jsArg=(s)=>esc(JSON.stringify(s));
+const nl=(s)=>String(s||'').replaceAll('\n',' ');
+function initialState(){return {learned:{},days:{},activity:{},grammarDone:{},practice:{},phraseLearned:{},dailyExtras:{},dailyChecks:{},dailyReviews:{},shuffleCounts:{}}}
+let state=initialState(), words=[], wordGroups=new Map(), remoteStatus='loading', view='today', grammarIndex=0, phraseCategory='phrasal', scenarioIndex=0, wordLimit=36, selectedAnswers={}, phraseQuery="", phraseFilter="all", phraseLimit=30;
+try{let x=JSON.parse(localStorage.getItem(KEY));if(x&&typeof x==='object') state={...initialState(),...x}}catch(e){}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){toast('Nie udało się zapisać. Sprawdź miejsce w przeglądarce.')}try{window.englishCloudOnPersist?.()}catch(e){console.warn('Błąd kolejki synchronizacji:',e)}}
+function toast(message){const e=document.getElementById('toast');e.textContent=message;e.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>e.classList.remove('show'),2600)}
+function at(d){return state.activity[d]||{learned:0,quiz:0,practice:0}}
+function event(kind){const d=TODAY();state.activity[d]??={learned:0,quiz:0,practice:0};state.activity[d][kind]=(state.activity[d][kind]||0)+1;persist()}
+function learnedCount(){return [...new Set(words.map(w=>w.wordKey))].filter(k=>state.learned[k]).length}
+function streak(){let d=new Date();let n=0;for(let i=0;i<6000;i++){const key=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;const a=at(key);if((a.learned||0)+(a.quiz||0)+(a.practice||0)>0)n++;else if(i===0){d.setDate(d.getDate()-1);continue}else break;d.setDate(d.getDate()-1)}return n}
+// Krótki zestaw awaryjny offline; 3805 wpisów pobieramy na żywo ze wskazanego źródła.
+const FALLBACK=[
+['a','jakiś, jeden (przedimek)','I have a dog.','Mam psa.'],['about','około, na temat','The book is about animals.','Książka jest o zwierzętach.'],['above','nad, ponad','The lamp is above the table.','Lampa jest nad stołem.'],['across','przez, na drugą stronę','We walked across the street.','Przeszliśmy przez ulicę.'],['action','działanie','We need to take action.','Musimy podjąć działanie.'],['activity','aktywność, zajęcie','This is my favourite activity.','To moja ulubiona aktywność.'],['actor','aktor','He is a famous actor.','On jest znanym aktorem.'],['actress','aktorka','She is a great actress.','Ona jest świetną aktorką.'],['add','dodawać','Please add some milk.','Dodaj trochę mleka.'],['address','adres','Write your address here.','Napisz tutaj swój adres.'],['adult','dorosły','An adult helped me.','Pomógł mi dorosły.'],['advice','rada','Thank you for your advice.','Dziękuję za radę.'],['afraid','przestraszony','Do not be afraid.','Nie bój się.'],['after','po','I study after school.','Uczę się po szkole.'],['afternoon','popołudnie','See you this afternoon.','Do zobaczenia po południu.'],['again','znowu','Try again.','Spróbuj ponownie.'],['age','wiek','What is your age?','Ile masz lat?'],['ago','temu','I called you an hour ago.','Dzwoniłem godzinę temu.'],['agree','zgadzać się','I agree with you.','Zgadzam się z tobą.'],['air','powietrze','We need fresh air.','Potrzebujemy świeżego powietrza.'],['airport','lotnisko','The airport is far away.','Lotnisko jest daleko.'],['all','wszyscy, wszystko','All students are here.','Wszyscy uczniowie są tutaj.'],['also','też, również','I also like music.','Ja też lubię muzykę.'],['always','zawsze','She always smiles.','Ona zawsze się uśmiecha.'],['amazing','niesamowity','The view is amazing.','Widok jest niesamowity.'],['and','i, oraz','Tea and coffee.','Herbata i kawa.'],['angry','zły','He is angry today.','On jest dziś zły.'],['animal','zwierzę','A dog is an animal.','Pies jest zwierzęciem.'],['another','inny, kolejny','Can I have another one?','Czy mogę dostać kolejny?'],['answer','odpowiedź; odpowiadać','I know the answer.','Znam odpowiedź.'],['apple','jabłko','I eat an apple.','Jem jabłko.'],['arrive','przybyć','I arrive at eight.','Przybywam o ósmej.'],['ask','pytać','Can I ask a question?','Czy mogę zadać pytanie?'],['beautiful','piękny','It is a beautiful day.','To piękny dzień.'],['because','ponieważ','I am happy because it is Friday.','Cieszę się, bo jest piątek.'],['before','przed','Wash your hands before dinner.','Umyj ręce przed kolacją.']
+].map(([word,pl,ex,ep])=>({id:'ox-'+word,wordKey:'ox-'+word.toLowerCase(),word,pl,ex,ep,level:'A1',ipa:'',source:'fallback'}));
+const ADVANCED={C1:[
+['allocate','przydzielać','We need to allocate enough time to this task.','Musimy przeznaczyć wystarczająco dużo czasu na to zadanie.'],['ambiguous','niejednoznaczny','His instructions were ambiguous.','Jego instrukcje były niejednoznaczne.'],['compelling','przekonujący','She made a compelling argument.','Przedstawiła przekonujący argument.'],['consecutive','następujący po sobie','It rained for three consecutive days.','Padało przez trzy kolejne dni.'],['contemplate','rozważać','I am contemplating a career change.','Rozważam zmianę pracy.'],['crucial','kluczowy','Your feedback is crucial to the project.','Twoja opinia jest kluczowa dla projektu.'],['deteriorate','pogarszać się','The situation began to deteriorate.','Sytuacja zaczęła się pogarszać.'],['discrepancy','rozbieżność','There is a discrepancy between the reports.','Między raportami występuje rozbieżność.'],['emphasise','podkreślać','I want to emphasise one important point.','Chcę podkreślić jedną ważną kwestię.'],['feasible','wykonalny','Is this solution feasible?','Czy to rozwiązanie jest wykonalne?'],['fluctuate','wahać się','Prices tend to fluctuate.','Ceny mają tendencję do wahań.'],['implement','wdrażać','We will implement the plan next month.','Wdrożymy plan w przyszłym miesiącu.'],['inevitable','nieunikniony','Some changes are inevitable.','Niektóre zmiany są nieuniknione.'],['inherent','nieodłączny','There are inherent risks in every project.','Każdy projekt wiąże się z nieodłącznym ryzykiem.'],['insight','wnikliwa obserwacja','The survey gave us valuable insights.','Ankieta dostarczyła nam cennych spostrzeżeń.'],['mitigate','łagodzić','We must mitigate the negative effects.','Musimy złagodzić negatywne skutki.'],['nevertheless','niemniej jednak','It was difficult; nevertheless, we finished.','To było trudne, niemniej jednak skończyliśmy.'],['preliminary','wstępny','These are only preliminary results.','To tylko wstępne wyniki.'],['reinforce','wzmacniać','Practice can reinforce good habits.','Ćwiczenia mogą utrwalić dobre nawyki.'],['relevant','istotny, odpowiedni','Please include only relevant information.','Uwzględnij tylko istotne informacje.'],['sustainable','zrównoważony','We need a sustainable long-term solution.','Potrzebujemy długoterminowego, zrównoważonego rozwiązania.'],['underlying','leżący u podstaw','We need to find the underlying cause.','Musimy znaleźć przyczynę leżącą u podstaw problemu.'],['viable','realny, wykonalny','This is a viable alternative.','To realna alternatywa.'],['widespread','powszechny','The practice is widespread.','Ta praktyka jest powszechna.']
+],C2:[
+['acquiesce','przystać na coś bez sprzeciwu','They eventually acquiesced to the proposal.','Ostatecznie przystali na propozycję.'],['alleviate','ulżyć, złagodzić','The changes should alleviate the pressure.','Zmiany powinny złagodzić presję.'],['anomaly','anomalia','The figures reveal an unexpected anomaly.','Dane pokazują nieoczekiwaną anomalię.'],['astute','przenikliwy, bystry','That was an astute observation.','To była przenikliwa obserwacja.'],['conundrum','trudna zagadka, dylemat','The decision presents a real conundrum.','Ta decyzja stanowi prawdziwy dylemat.'],['delineate','nakreślić, wyznaczyć','Please delineate your responsibilities.','Proszę jasno określić swoje obowiązki.'],['elusive','nieuchwytny','A clear solution remains elusive.','Jasne rozwiązanie pozostaje nieuchwytne.'],['ephemeral','ulotny, krótkotrwały','Fame can be ephemeral.','Sława bywa ulotna.'],['equivocal','dwuznaczny','His answer was deliberately equivocal.','Jego odpowiedź była celowo dwuznaczna.'],['exacerbate','pogarszać, zaostrzać','Delays may exacerbate the problem.','Opóźnienia mogą zaostrzyć problem.'],['fastidious','skrupulatny, bardzo wymagający','She is fastidious about details.','Ona jest bardzo skrupulatna w kwestii szczegółów.'],['idiosyncrasy','osobliwość, indywidualna cecha','Every writer has a few idiosyncrasies.','Każdy pisarz ma kilka osobliwych cech.'],['incongruous','niepasujący, niestosowny','The bright colours looked incongruous there.','Jaskrawe kolory wyglądały tam nie na miejscu.'],['intransigent','nieustępliwy','Both sides remained intransigent.','Obie strony pozostały nieustępliwe.'],['juxtapose','zestawiać obok siebie','The artist juxtaposes light and shadow.','Artysta zestawia światło i cień.'],['meticulous','drobiazgowy','He keeps meticulous records.','Prowadzi drobiazgowe zapiski.'],['obfuscate','zaciemniać, utrudniać zrozumienie','Complex language can obfuscate the truth.','Skomplikowany język może zaciemniać prawdę.'],['perfunctory','pobieżny, rutynowy','She gave a perfunctory reply.','Udzieliła zdawkowej odpowiedzi.'],['quintessential','najbardziej typowy','This is the quintessential seaside town.','To kwintesencja nadmorskiego miasteczka.'],['resilient','odporny, wytrzymały','The community proved remarkably resilient.','Społeczność okazała się niezwykle odporna.'],['scrutinise','wnikliwie badać','We should scrutinise the details.','Powinniśmy dokładnie przeanalizować szczegóły.'],['ubiquitous','wszechobecny','Smartphones are ubiquitous today.','Smartfony są dziś wszechobecne.'],['unprecedented','bezprecedensowy','The city experienced unprecedented growth.','Miasto doświadczyło bezprecedensowego wzrostu.'],['vindicate','potwierdzić słuszność, oczyścić z zarzutów','The results vindicated her decision.','Wyniki potwierdziły słuszność jej decyzji.']
+]};
+const advancedWords=Object.entries(ADVANCED).flatMap(([level,list])=>list.map(([word,pl,ex,ep])=>({id:'extra-'+word.toLowerCase(),wordKey:'extra-'+word.toLowerCase(),word,pl,ex,ep,level,ipa:'',source:'extra'})));
+const baseURL='https://raw.githubusercontent.com/bartekstefen/oxford3000-nauka/main/data.json';
+// Każdy rekord źródła ma własne ID. Nie łączymy różnych znaczeń tego samego słowa.
+function normalizeRemote(raw){
+ if(!raw || !Array.isArray(raw.words) || raw.words.length<3000)throw Error('Niepełny zbiór słów');
+ const arr=[];const ids=new Set();
+ for(let i=0;i<raw.words.length;i++){
+  const w=raw.words[i];const word=String(w.w||'').trim(),level=String(w.c||'').toUpperCase();
+  if(!word||!['A1','A2','B1','B2'].includes(level))continue;
+  const originalId=String(w.id??i),id='ox-entry-'+originalId;
+  if(ids.has(id))throw Error('Powtórzone ID w źródle: '+originalId);
+  ids.add(id);
+  arr.push({id,wordKey:'ox-'+word.toLocaleLowerCase('en'),originalId,word,level,
+   pl:String(w.pl||''),ipa:String(w.i||''),ex:String(w.ex||''),ep:String(w.ep||''),
+   pos:String(w.p||''),posPl:String(w.pp||''),source:'oxford'});
+ }
+ if(arr.length!==raw.words.length)throw Error('Nie udało się zachować wszystkich wpisów źródła');
+ return arr;
+}
+// W słowniku pokazujemy wszystkie znaczenia (3805 rekordów), ale dzień nauki
+// otrzymuje 6 RÓŻNYCH słów. Postęp jest wspólny dla wszystkich znaczeń danego słowa.
+function setWords(source){
+ const base=source.map(w=>({...w,wordKey:w.wordKey || (w.source==='extra'?'extra-':'ox-')+w.word.toLocaleLowerCase('en')}));
+ const present=new Set(base.map(w=>w.word.toLocaleLowerCase('en')));
+ const extras=advancedWords.map(w=>present.has(w.word.toLocaleLowerCase('en'))?{...w,wordKey:'ox-'+w.word.toLocaleLowerCase('en')}:w);
+ words=[...base,...extras]
+  .sort((a,b)=>LEVELS.indexOf(a.level)-LEVELS.indexOf(b.level)||a.word.localeCompare(b.word,'en'));
+ wordGroups=new Map();
+ for(const w of words){if(!wordGroups.has(w.wordKey))wordGroups.set(w.wordKey,[]);wordGroups.get(w.wordKey).push(w)}
+ // Stare oznaczenia i lekcje z poprzednich wersji pozostają ważne.
+ const redirects=new Map(words.filter(w=>w.id!==w.wordKey).map(w=>[w.id,w.wordKey]));
+ let migrated=false;
+ for(const [oldKey,newKey] of redirects){if(state.learned[oldKey]&&!state.learned[newKey]){state.learned[newKey]=state.learned[oldKey];migrated=true}}
+ for(const [day,list] of Object.entries(state.days)){if(!Array.isArray(list))continue;const updated=[...new Set(list.map(k=>redirects.get(k)||k))];if(updated.join('|')!==list.join('|')){state.days[day]=updated;migrated=true}}
+ if(migrated)persist();
+ updateSourceLabels();ensureToday();renderEverything();
+}
+function updateSourceLabels(){
+ const el=document.getElementById('sourceTag'),s=document.getElementById('baseStatus');
+ if(remoteStatus==='full'){
+  const ox=words.filter(w=>w.source==='oxford').length,extra=words.filter(w=>w.source==='extra').length;
+  const uniqueOx=new Set(words.filter(w=>w.source==='oxford').map(w=>w.wordKey)).size;
+  el.textContent=`✓ Cała baza: ${ox} wpisów A1–B2 + ${extra} C1–C2`;
+  const levels=LEVELS.map(l=>`<span class="lvl ${l}" style="margin:3px">${l}: ${words.filter(w=>w.level===l).length}</span>`).join('');
+  s.innerHTML=`✅ <b>Pełna baza: ${ox} wpisów A1–B2</b> oraz <b>${extra} dodatkowych słówek C1–C2</b> z English Path. <span class="small">Każde znaczenie ma własny wpis, dlatego niektóre słowa mogą występować kilka razy w słowniku.</span> <div style="margin-top:9px">${levels}</div><div class="tiny" style="margin-top:8px">W zakładce Baza widzisz wszystkie wpisy. W dziennej lekcji dane słowo pojawia się tylko raz, z kompletem dostępnych znaczeń.</div>`;
+  s.className='note';
+ }else{
+  el.textContent=`⚠ Baza startowa · ${FALLBACK.length} A1`;
+  s.innerHTML='⚠ <b>Nie udało się pobrać pełnej bazy.</b> Dostępna jest tylko próbka offline A1. Włącz internet i wybierz „Odśwież bazę” w Postępach albo pobierz oryginalny <a target="_blank" rel="noopener" class="linklike" href="https://raw.githubusercontent.com/bartekstefen/oxford3000-nauka/main/data.json">data.json</a> i zaimportuj go w Postępach.';
+  s.className='note orange-note';
+ }
+}
+async function retryDownload(){
+ remoteStatus='loading';
+ try{
+  const ctrl=new AbortController();const t=setTimeout(()=>ctrl.abort(),18000);
+  let resp;try{resp=await fetch(baseURL,{signal:ctrl.signal,cache:'no-store'});}finally{clearTimeout(t)}
+  if(!resp.ok)throw Error('HTTP '+resp.status);
+  const normalized=normalizeRemote(await resp.json());
+  try{localStorage.setItem(CACHE,JSON.stringify(normalized))}catch(e){toast('Brak miejsca na zapis słówek offline — użyj eksportu postępu.')}
+  remoteStatus='full';setWords(normalized);toast(`Załadowano ${normalized.length} wpisów A1–B2!`);
+ }catch(err){
+  try{const cached=JSON.parse(localStorage.getItem(CACHE));
+   if(Array.isArray(cached)&&cached.length>=3000){remoteStatus='full';setWords(cached);toast('Używam pełnej bazy zapisanej wcześniej offline.');return}
+  }catch(e){}
+  if(words.filter(w=>w.source==='oxford').length>=3000){remoteStatus='full';updateSourceLabels();toast('Odświeżenie nie powiodło się; poprzednia pełna baza nadal działa.');return}
+  remoteStatus='fallback';setWords(FALLBACK);toast('Nie można pobrać bazy — sprawdź internet.');
+ }
+}
+function sortedUniqueWords(){return words}
+function dayAssigned(d){return state.days[d] || []}
+function existingAssigned(){const ids=new Set();for(const list of Object.values(state.days))if(Array.isArray(list))for(const id of list)ids.add(id);return ids}
+
+// Słownik Oxford nie zawiera etykiet tematycznych. Pomocnicze grupy pomagają
+// różnicować słownictwo; pozostałe słowa nadal są losowane normalnie.
+const TOPIC_WORDS={
+ 'Jedzenie':'apple banana bread breakfast burger butter cake carrot cheese chicken chocolate coffee cook cooking cookie dinner drink egg eat fish food fork fruit grape hungry juice kitchen lemon lunch meal meat milk onion orange pasta pepper potato rice salad sandwich soup spoon sugar sweet tea tomato vegetable water',
+ 'Dom':'apartment bathroom bed bedroom blanket chair clean door floor furniture garden home house lamp mirror oven pillow roof room shower sink sofa stairs table toilet towel wall window',
+ 'Podróże':'airport arrive bicycle bike boat bridge bus car city country drive driver flight fly holiday hotel journey luggage map passport passenger plane railway ride road station ticket train travel trip vacation visit',
+ 'Nauka':'answer art book class classroom college course dictionary education exam exercise homework language learn lesson library maths mathematics notebook paper pencil practice question read school science student study teacher test university write',
+ 'Praca':'accountant assistant boss business career company contract customer employee employer factory industry interview job manager meeting office project report salary secretary team work worker workplace',
+ 'Rodzina':'aunt baby brother child children cousin dad daughter family father friend friendship grandfather grandmother grandma grandpa husband mother mum parent parents relationship relative sister son uncle wife',
+ 'Zdrowie':'arm back body bone brain cold cough dentist doctor ear eye face fever finger foot hair hand head headache health healthy heart hospital illness knee leg medicine mouth neck nurse pain patient shoulder sick stomach tooth',
+ 'Przyroda':'air animal beach bird butterfly cat cloud dog earth farm field flower forest grass hill horse insect lake leaf mountain nature ocean park plant rain river sea sky snow spring star storm sun tree valley weather wind winter',
+ 'Technologia':'app battery camera chat computer device digital email file internet keyboard laptop message mobile mouse online password phone photograph photo printer screen software tablet technology text video website wifi',
+ 'Zakupy':'bill buy cash cheap checkout coin cost credit customer discount euro expensive market money pay payment pound price product receipt rent sell shop shopping spend supermarket wallet',
+ 'Uczucia':'afraid angry bored calm confident cry disappointed embarrassed excited fear feel feeling friendly happy hate hope joy laugh lonely love nervous proud relax sad shy smile stress surprised tired worried',
+ 'Czas i plan':'afternoon ago appointment autumn calendar century daily date day deadline early evening future hour late later minute monday month morning night now plan schedule second soon summer time today tomorrow tonight tuesday week weekend year yesterday',
+ 'Hobby i sport':'ball basketball cinema dance draw drawing film football game guitar hobby music paint painting piano play player race run singing skate ski soccer sport swim swimming tennis theatre walk weekend workout',
+ 'Ubrania':'belt blouse boot boots coat dress fashion hat jacket jeans jumper pocket scarf shirt shoe shoes shorts skirt sock socks suit sweater trousers umbrella uniform wear',
+ 'Komunikacja':'agree ask argument call conversation discuss explain hello information listen mention news opinion phone reply respond say speak speech talk tell translate understand voice word'
+};
+const TOPIC_LOOKUP=new Map(Object.entries(TOPIC_WORDS).flatMap(([topic,entries])=>entries.split(' ').map(word=>[word,topic])));
+function lessonTopic(word){return TOPIC_LOOKUP.get(word.toLowerCase().trim())||'Pozostałe'}
+function mixHash(input){let h=2166136261;for(const ch of input){h^=ch.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
+function basicsStillToLearn(){return [...wordGroups.values()].some(g=>['A1','A2','B1'].includes(g[0].level)&&!state.learned[g[0].wordKey])}
+function chooseSix(date=TODAY()){
+ const assigned=existingAssigned(),basic=basicsStillToLearn();
+ // Najpierw A1/A2/B1 (po dwa z każdego, jeżeli są dostępne), potem B2/C1/C2.
+ const levels=remoteStatus==='full'?(basic?['A1','A2','B1']:['B2','C1','C2']):['A1'];
+ const candidates=[...wordGroups.values()].map(group=>group[0]).filter(w=>levels.includes(w.level)&&!assigned.has(w.wordKey)&&!state.learned[w.wordKey]);
+ const nonce=state.shuffleCounts?.[date]||0,seed=date+'|'+nonce;
+ const pools=new Map(levels.map(l=>[l,candidates.filter(w=>w.level===l)]));
+ const picked=[],usedLetters=new Set(),usedTopics=new Set();
+ const target=levels.length===3?(basic?['A1','A2','B1','A1','A2','B1']:['B2','C1','C2','B2','B2','B2']):Array(6).fill('A1');
+ const rotated=levels.length===3?target.slice((mixHash(seed+'order')%3)).concat(target.slice(0,mixHash(seed+'order')%3)):target;
+ for(const desiredLevel of rotated){
+  const available=(pools.get(desiredLevel)||[]).length? pools.get(desiredLevel):candidates.filter(w=>!picked.some(p=>p.wordKey===w.wordKey));
+  if(!available.length)break;
+  let best=null,bestScore=-Infinity;
+  for(const w of available){
+   if(picked.some(p=>p.wordKey===w.wordKey))continue;
+   const first=w.word.slice(0,1).toUpperCase(),topic=lessonTopic(w.word);
+   const diverseLetter=!usedLetters.has(first)?110:-110;
+   const diverseTopic=topic!=='Pozostałe'?(usedTopics.has(topic)?-60:85):0;
+   const randomPart=mixHash(seed+'|'+w.wordKey)%100;
+   const score=diverseLetter+diverseTopic+randomPart;
+   if(score>bestScore){best=w;bestScore=score}
+  }
+  if(!best)break;
+  picked.push(best);usedLetters.add(best.word.slice(0,1).toUpperCase());
+  usedTopics.add(lessonTopic(best.word));
+  pools.set(best.level,(pools.get(best.level)||[]).filter(w=>w.wordKey!==best.wordKey));
+ }
+ return picked.map(w=>w.wordKey);
+}
+function reshuffleToday(){
+ const d=TODAY(),current=dayAssigned(d);
+ if(remoteStatus==='loading'){toast('Poczekaj na wczytanie bazy.');return}
+ if(!current.length){toast('Nie ma jeszcze dzisiejszego zestawu.');return}
+ if(current.some(id=>state.learned[id])){toast('Nie można wymieszać zestawu po oznaczeniu słówka jako nauczonego.');return}
+ state.shuffleCounts??={};state.shuffleCounts[d]=(state.shuffleCounts[d]||0)+1;
+ delete state.days[d];const next=chooseSix(d);
+ if(next.length!==6){state.days[d]=current;toast('W tej grupie poziomów brakuje kolejnych 6 nieużywanych słówek.');return}
+ state.days[d]=next;persist();renderEverything();toast('Nowy, różnorodny zestaw gotowy! 🔀');
+}
+function ensureToday(){const d=TODAY();if(!Array.isArray(state.days[d])){ // Czekamy na pełną bazę, zanim rozlosujemy zestaw.
+ if(remoteStatus==='loading')return;state.days[d]=chooseSix(d);persist();}}
+function currentDay(){return dayAssigned(TODAY())}
+function currentLevel(){return basicsStillToLearn()?'A1–B1':'B2–C2'}
+
+// Dzienna powtórka i rotacja dodatkowych ćwiczeń. Wszystko zapisane w tym samym postępie.
+function previousDate(){const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()-1);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')}
+function weekdayFor(date){const d=new Date(date+'T12:00:00');return (d.getDay()+6)%7}
+function dayTask(date){
+ state.dailyExtras??={};if(state.dailyExtras[date])return state.dailyExtras[date];
+ if(date!==TODAY())return null; // Nie twórz sztucznych lekcji w historii.
+ const weekday=weekdayFor(date),kind=({1:'phrasal',2:'collocations',4:'idioms',5:'phrasal'})[weekday]||'grammar';
+ const existing=new Set(Object.values(state.dailyExtras).flatMap(v=>(v.phrases||[]).map(x=>x.category+'|'+x.en.toLowerCase())));
+ const selected=[];
+ if(kind!=='grammar'){
+  const target=kind==='idioms'?2:3;
+  const choices=PHRASES[kind].rows;
+  for(const row of choices){const k=phraseKey(kind,row[0]);if(!existing.has(kind+'|'+row[0].toLowerCase())&&!state.phraseLearned?.[k]){selected.push({category:kind,en:row[0]});if(selected.length===target)break}}
+ }
+ const historyCount=Object.keys(state.days||{}).filter(d=>d<=date).length;
+ const grammarNumber=Math.min(GRAMMAR.length-1,Math.floor(Math.max(0,historyCount-1)/3));
+ const task={kind,phrases:selected,grammarIndex:grammarNumber,grammarQuiz:(date.charCodeAt(date.length-1)%3),scenarioIndex:weekday%SCENARIOS.length,includeWriting:[0,2,3,5,6].includes(weekday)};
+ state.dailyExtras[date]=task;persist();return task;
+}
+function dailyCheck(){state.dailyChecks??={};state.dailyChecks[TODAY()]??={};return state.dailyChecks[TODAY()]}
+function saveDailyPhrase(category,en){state.phraseLearned??={};const key=phraseKey(category,en);if(!state.phraseLearned[key]){state.phraseLearned[key]=TODAY();persist();}renderDailyExtra();if(view==='phrases')renderPhrases()}
+function answerDailyMini(choice){const task=dayTask(TODAY());if(!task)return;let answer,kind=task.kind;
+ if(kind==='grammar'){const q=GRAMMAR[task.grammarIndex].quiz[task.grammarQuiz];answer=q[2]}
+ else{const row=PHRASES[kind].rows.find(r=>r[0]===task.phrases[0]?.en);answer=row?.[0]}
+ if(choice===answer){const check=dailyCheck();if(!check.quiz){check.quiz=true;event('quiz')}persist();toast('Poprawna odpowiedź! ✓')}
+ else{window.dailyMiniMistake=choice;toast('Jeszcze nie — spróbuj ponownie.')}
+ renderDailyExtra();
+}
+function saveDailyWriting(){const node=document.getElementById('dailyWriting');if(!node)return;const value=node.value.trim();if(!value){toast('Wpisz najpierw własne zdanie lub wypowiedź.');return}const check=dailyCheck();const wasDone=!!check.writing;check.writing=value;persist();if(!wasDone)event('practice');renderDailyExtra();toast('Twoja odpowiedź została zapisana ✓')}
+function renderDailyExtra(){const el=document.getElementById('dailyExtra');if(!el)return;const task=dayTask(TODAY());if(!task){el.innerHTML='<div class="muted">Wczytywanie dodatkowych ćwiczeń…</div>';return}
+ const check=dailyCheck(),weekday=weekdayFor(TODAY());let html='<div class="eyebrow">Ćwiczenia zmieniają się codziennie</div>';
+ const kindNames={phrasal:'Phrasal verbs',collocations:'Kolokacje',idioms:'Idiomy',grammar:'Zagadka gramatyczna'};
+ html+=`<div class="extra-header" style="margin:9px 0 13px"><h3>${kindNames[task.kind]}</h3><span class="lvl B1">${['Poniedziałek','Wtorek','Środa','Czwartek','Piątek','Sobota','Niedziela'][weekday]}</span></div>`;
+ if(task.kind==='grammar'){
+  const gr=GRAMMAR[task.grammarIndex],q=gr.quiz[task.grammarQuiz];
+  html+=`<p class="small muted">${esc(gr.name)} · ${esc(gr.desc)}</p><div class="quiz"><div class="question">${esc(q[0])}</div><div class="quiz-options">${q[1].map(opt=>`<button class="option ${check.quiz&&opt===q[2]?'correct':''}" onclick="answerDailyMini(${jsArg(opt)})" ${check.quiz?'disabled':''}>${esc(opt)}</button>`).join('')}</div>${check.quiz?`<div class="feedback">✓ Poprawnie. ${esc(q[3])}</div>`:''}</div>`
+ }else{
+  const rows=task.phrases.map(p=>PHRASES[p.category].rows.find(r=>r[0]===p.en)).filter(Boolean);
+  html+=`<p class="small muted">Poznaj ${rows.length} nowe wyrażenia z przykładami. Nauczone nie wrócą jako nowe.</p><div class="extra-tiles">${rows.map(r=>`<div class="extra-phrase"><strong>${esc(r[0])}</strong> <button type="button" class="audio-inline" onclick="speakText(${jsArg(r[0].split(' / ')[0])})">🔊 Zwrot</button><div class="small">${esc(r[1])}</div><em>${esc(r[2])}</em> <button type="button" class="audio-inline" onclick="speakText(${jsArg(r[2])})">🔊 Zdanie</button><div class="tiny muted">${esc(r[3])}</div><button class="btn smallbtn" onclick="saveDailyPhrase(${jsArg(task.kind)},${jsArg(r[0])})" ${state.phraseLearned?.[phraseKey(task.kind,r[0])]?'disabled':''}>${state.phraseLearned?.[phraseKey(task.kind,r[0])]?'✓ Umiem':'+ Umiem'}</button></div>`).join('')}</div>`;
+  if(rows.length){const correct=rows[0][0],options=[correct,...PHRASES[task.kind].rows.map(r=>r[0]).filter(x=>x!==correct).slice((weekday*11)%15,(weekday*11)%15+2)];options.sort((a,b)=>a.charCodeAt(0)-b.charCodeAt(0));
+   html+=`<div class="quiz" style="margin-top:14px"><div class="eyebrow">Minizagadka</div><div class="question" style="margin-top:7px">Jak po angielsku powiedzieć „${esc(rows[0][1])}”?</div><div class="quiz-options">${options.map(opt=>`<button class="option ${check.quiz&&opt===correct?'correct':''}" onclick="answerDailyMini(${jsArg(opt)})" ${check.quiz?'disabled':''}>${esc(opt)}</button>`).join('')}</div>${check.quiz?'<div class="feedback">✓ Udało się!</div>':''}</div>`}
+ }
+ if(task.includeWriting){const scenario=SCENARIOS[task.scenarioIndex];let exercise=task.kind==='collocations'?'Ułóż własne angielskie zdanie z jedną z dzisiejszych kolokacji.':scenario.task;
+ html+=`<div class="extra-card"><div class="eyebrow">Angielski w praktyce</div><h3 style="margin-top:7px">${task.kind==='collocations'?'Ułóż zdanie':esc(scenario.title)}</h3><p class="small muted">${esc(exercise)}</p><textarea id="dailyWriting" class="bigtext extra-write" placeholder="Napisz po angielsku…">${esc(check.writing||'')}</textarea><button class="btn primary" onclick="saveDailyWriting()">${check.writing?'✓ Zapisz poprawioną odpowiedź':'Zapisz odpowiedź'}</button>${check.writing?'<span class="done-text" style="margin-left:10px">✓ Wykonane</span>':''}</div>`}
+ el.innerHTML=html;
+}
+function reviewQuestions(){
+ const yesterday=previousDate(),ids=Array.isArray(state.days[yesterday])?state.days[yesterday]:[];
+ const available=ids.map(id=>getWord(id)).filter(Boolean).slice(0,6);
+ const keys=[...new Set(available.map(w=>w.word.toLowerCase()))];
+ const fallback=sortedUniqueWords().filter(w=>!keys.includes(w.word.toLowerCase())).slice(0,14);
+ const vocab=available.map((w,i)=>{
+  const others=[...available.slice(i+1),...available.slice(0,i),...fallback].map(x=>x.word).filter((x,j,a)=>x!==w.word&&a.indexOf(x)===j).slice(0,2);
+  return {id:'word:'+w.wordKey,type:'Słówko',prompt:w.pl,correct:w.word,choices:[w.word,...others]};
+ });
+ const extra=state.dailyExtras?.[yesterday];
+ if(extra&&Array.isArray(extra.phrases)){
+  for(const phrase of extra.phrases){const row=PHRASES[phrase.category]?.rows.find(r=>r[0]===phrase.en);if(!row)continue;
+   const decoys=PHRASES[phrase.category].rows.filter(r=>r[0]!==row[0]).slice((yesterday.length*5+vocab.length)%20).slice(0,2).map(r=>r[0]);
+   vocab.push({id:'phrase:'+phrase.category+':'+row[0],type:'Zwrot',prompt:row[1],correct:row[0],choices:[row[0],...decoys]})
+  }
+ }
+ if(extra?.kind==='grammar'){
+  const gr=GRAMMAR[extra.grammarIndex],q=gr?.quiz?.[extra.grammarQuiz];if(q)vocab.push({id:'grammar:'+gr.name+':'+extra.grammarQuiz,type:'Gramatyka · '+gr.name,prompt:q[0],correct:q[2],choices:q[1]})
+ }
+ return vocab.map((q,i)=>({...q,choices:q.choices.filter((c,j,a)=>a.indexOf(c)===j).sort((a,b)=>((a.length+3*i)%13)-((b.length+3*i)%13)||a.localeCompare(b))}));
+}
+let lastReviewMistake=null;
+function answerReview(id,choice){const items=reviewQuestions(),q=items.find(x=>x.id===id);if(!q)return;
+ if(q.correct!==choice){lastReviewMistake=id+'|'+choice;renderYesterdayReview();return}
+ state.dailyReviews??={};state.dailyReviews[TODAY()]??={yesterday:previousDate(),correct:{}};
+ const record=state.dailyReviews[TODAY()];if(record.yesterday!==previousDate()){record.yesterday=previousDate();record.correct={}}
+ if(!record.correct[id]){record.correct[id]=true;const finished=items.every(item=>record.correct[item.id]);if(finished)event('quiz');persist()}
+ lastReviewMistake=null;renderYesterdayReview();
+}
+function renderYesterdayReview(){
+ const host=document.getElementById('reviewHost'),content=document.getElementById('lessonContent');if(!host||!content)return;
+ const previous=previousDate(),assigned=state.days[previous]||[],items=reviewQuestions();
+ // Jeśli wczorajszych słów nie ma w pamięci (baza nie została pobrana), nie blokuj nauki na zawsze.
+ if(assigned.length&&!items.length&&remoteStatus==='loading'){
+  host.innerHTML='<div class="review-gate"><span class="eyebrow">Etap 1 · Powtórka</span><h2>Wczytuję wczorajszą lekcję…</h2><p class="muted">Jeszcze chwila — potrzebuję bazy słówek do quizu.</p></div>';
+  content.classList.add('lesson-locked');return;
+ }
+ if(!items.length){
+  host.innerHTML='<div class="note" style="margin-bottom:20px">✨ <b>Powtórka z wczoraj:</b> nie masz zapisanej lekcji z poprzedniego dnia. Możesz od razu przejść do dzisiejszych 6 słówek!</div>';
+  content.classList.remove('lesson-locked');return;
+ }
+ state.dailyReviews??={};const record=state.dailyReviews[TODAY()]||{yesterday:previous,correct:{}};
+ const correct=record.yesterday===previous?record.correct||{}:{},done=items.filter(q=>correct[q.id]).length;
+ if(done===items.length){
+  host.innerHTML=`<div class="review-complete">✅ <strong>Powtórka z wczoraj ukończona! ${done}/${items.length}</strong>Świetnie! Możesz przejść do 6 nowych słówek i dzisiejszych zadań.</div>`;
+  content.classList.remove('lesson-locked');return;
+ }
+ content.classList.add('lesson-locked');const q=items.find(x=>!correct[x.id]);const bad=lastReviewMistake?.split('|')[0]===q.id?lastReviewMistake.slice(q.id.length+1):null;
+ host.innerHTML=`<div class="review-gate"><div class="review-head"><div><span class="eyebrow">Etap 1 z 2 · Najpierw powtórka z wczoraj</span><h2>Co pamiętasz z poprzedniej lekcji?</h2><p class="small muted">Krótki quiz ze słówek${items.some(x=>x.type==='Zwrot')?', zwrotów':''}${items.some(x=>x.type.startsWith('Gramatyka'))?' i gramatyki':''}. Poprawne odpowiedzi odblokują nową lekcję. Powtórki nie liczą się jako nowe słówka.</p></div><span class="pill">${done} / ${items.length} poprawnych</span></div><div class="review-progress"><span style="width:${Math.round(done/items.length*100)}%"></span></div><div class="quiz" style="margin-top:17px"><span class="eyebrow">${esc(q.type)} · pytanie ${done+1} z ${items.length}</span><div class="question" style="margin-top:9px">${q.type.startsWith('Gramatyka')?'Uzupełnij zdanie: ':'Jak to powiedzieć po angielsku? '}<span style="color:#19745d">${esc(q.prompt)}</span></div><div class="review-questions">${q.choices.map(choice=>`<button class="review-choice ${bad===choice?'mistake':''}" onclick="answerReview(${jsArg(q.id)},${jsArg(choice)})">${esc(choice)}</button>`).join('')}</div>${bad?'<div class="feedback" style="color:#a65b53">Nie tym razem — spróbuj ponownie. Możesz odpowiedzieć jeszcze raz.</div>':''}</div></div>`;
+}
+
+/* English Path: pronunciation v2. Never allow a Polish default voice to pronounce English.
+ * Dictionary MP3 files require internet. TTS sentences/phrases require an en-* voice installed
+ * in the browser/OS. No undocumented proxy or remote synthetic-voice service is assumed. */
+const PRON_KEY='english_path_pronunciation_v1'; // preserve settings exported by older versions
+const pronunciationDefaults={accent:'en-GB',voice:'auto',rate:0.9,recorded:true};
+let pronPrefs={...pronunciationDefaults};
+try{const cfg=JSON.parse(localStorage.getItem(PRON_KEY));if(cfg&&typeof cfg==='object')pronPrefs={...pronunciationDefaults,...cfg}}catch(e){}
+const pronunciationCache=new Map();
+const pronunciationRequests=new Map();
+let pronunciationAudio=null,pronunciationSerial=0,activeUtterance=null,speechWatchdog=null;
+let pronunciationVoiceNotice='';
+function audioStatus(text){const el=document.getElementById('pronStatus');if(el)el.textContent=text}
+function audioShowHelp(show){const help=document.getElementById('pronHelp');if(help)help.classList.toggle('hidden',!show)}
+function englishVoices(){try{return ('speechSynthesis' in window)?window.speechSynthesis.getVoices().filter(v=>/^en(?:[-_]|$)/i.test(v.lang||'')):[]}catch(e){return []}}
+function voiceQuality(voice){const name=(voice.name||'').toLowerCase();return (/neural|natural|online/.test(name)?120:0)+(/google|microsoft|premium|enhanced/.test(name)?55:0)+(/sonia|ryan|aria|jenny|libby|guy|emma|daniel/.test(name)?30:0)+(voice.localService?2:0)}
+function voiceLocale(v){return String(v.lang||'').replace('_','-').toLowerCase()}
+function chooseEnglishVoice(){
+ const voices=englishVoices();if(!voices.length)return null;
+ if(pronPrefs.voice!=='auto'){
+  const selected=voices.find(v=>v.voiceURI===pronPrefs.voice);if(selected)return selected;
+ }
+ const matching=voices.filter(v=>voiceLocale(v)===pronPrefs.accent.toLowerCase());
+ return [...(matching.length?matching:voices)].sort((a,b)=>voiceQuality(b)-voiceQuality(a))[0];
+}
+function updatePronunciationVoiceList(){
+ const list=document.getElementById('pronVoice');if(!list)return;
+ const voices=englishVoices().sort((a,b)=>(voiceLocale(a)===pronPrefs.accent.toLowerCase()?0:1)-(voiceLocale(b)===pronPrefs.accent.toLowerCase()?0:1)||voiceQuality(b)-voiceQuality(a)||a.name.localeCompare(b.name));
+ list.innerHTML='<option value="auto">Automatyczny (tylko angielski)</option>';
+ voices.forEach(v=>{const opt=document.createElement('option');opt.value=v.voiceURI;opt.textContent=v.name+' ('+v.lang+')'+(v.localService?' · lokalny':' · online');list.appendChild(opt)});
+ if(!voices.some(v=>v.voiceURI===pronPrefs.voice))pronPrefs.voice='auto';
+ list.value=pronPrefs.voice;
+ audioShowHelp(!voices.length);
+ if(!voices.length){
+  pronunciationVoiceNotice='Nie znaleziono żadnego angielskiego głosu. Nagrania słownikowe mogą nadal działać online, ale odsłuchiwanie zdań wymaga doinstalowania lektora English.';
+ }else{
+  const chosen=chooseEnglishVoice();
+  pronunciationVoiceNotice='Dostępne angielskie głosy: '+voices.length+'. Wybrany: '+chosen.name+' ('+chosen.lang+').';
+  if(voiceLocale(chosen)!==pronPrefs.accent.toLowerCase())pronunciationVoiceNotice+=' Uwaga: wybrany głos ma inny akcent niż wskazany powyżej.';
+ }
+ audioStatus(pronunciationVoiceNotice);
+}
+function refreshPronunciationVoices(){updatePronunciationVoiceList();if(englishVoices().length)toast('Wykryto angielskie głosy! Kliknij „Test lektora”.');else toast('Brak angielskich głosów. Zainstaluj głos English i uruchom ponownie przeglądarkę.');}
+function initPronunciation(){
+ const accent=document.getElementById('pronAccent'),rate=document.getElementById('pronRate'),record=document.getElementById('pronRecorded');
+ if(!accent)return;
+ accent.value=pronPrefs.accent;rate.value=String(pronPrefs.rate);if(!rate.value)rate.value='0.9';record.checked=!!pronPrefs.recorded;
+ updatePronunciationVoiceList();
+ if('speechSynthesis' in window){
+  window.speechSynthesis.addEventListener('voiceschanged',updatePronunciationVoiceList);
+  // Some browsers expose English voices after the initial DOM load without a voiceschanged event.
+  for(const wait of [400,1300,3000])setTimeout(()=>{if(!englishVoices().length)updatePronunciationVoiceList()},wait);
+ }
+}
+function changePronunciation(){
+ const oldAccent=pronPrefs.accent,accent=document.getElementById('pronAccent').value;
+ pronPrefs.accent=accent;pronPrefs.rate=Number(document.getElementById('pronRate').value)||0.9;
+ pronPrefs.recorded=document.getElementById('pronRecorded').checked;
+ pronPrefs.voice=oldAccent!==accent?'auto':document.getElementById('pronVoice').value;
+ if(oldAccent!==accent)updatePronunciationVoiceList();
+ try{localStorage.setItem(PRON_KEY,JSON.stringify(pronPrefs))}catch(e){}
+ stopPronunciation();
+ audioStatus(pronunciationVoiceNotice||'Zapisano ustawienia. Kliknij „Test lektora” lub 🔊 przy słówku.');
+ prefetchDailyRecordings();
+}
+function stopPronunciation(){
+ pronunciationSerial++;
+ if(speechWatchdog){clearTimeout(speechWatchdog);speechWatchdog=null}
+ if(pronunciationAudio){try{pronunciationAudio.pause();pronunciationAudio.currentTime=0}catch(e){}pronunciationAudio=null}
+ if('speechSynthesis' in window){try{window.speechSynthesis.cancel()}catch(e){}}
+ activeUtterance=null;
+}
+function speakText(text){
+ stopPronunciation();const ticket=pronunciationSerial,sentence=String(text||'').trim();if(!sentence)return;
+ if(!('speechSynthesis' in window)||typeof SpeechSynthesisUtterance==='undefined'){
+  audioStatus('Ta przeglądarka nie obsługuje syntezy mowy. Wypróbuj najnowszy Chrome lub Edge.');audioShowHelp(true);return;
+ }
+ const voice=chooseEnglishVoice();
+ if(!voice){
+  audioShowHelp(true);
+  audioStatus('Nie uruchomiono syntezatora: brak angielskiego głosu. Nie odczytuję angielskich zdań polskim głosem. Zainstaluj głos English w Windows i przetestuj ponownie.');
+  return;
+ }
+ const utterance=new SpeechSynthesisUtterance(sentence);activeUtterance=utterance;
+ utterance.voice=voice;utterance.lang=voice.lang;utterance.rate=pronPrefs.rate;utterance.pitch=1;
+ let started=false;
+ utterance.onstart=()=>{if(ticket!==pronunciationSerial)return;started=true;if(speechWatchdog)clearTimeout(speechWatchdog);speechWatchdog=null;audioShowHelp(false);audioStatus('▶ Lektor: '+voice.name+' ('+voice.lang+')')};
+ utterance.onerror=e=>{
+  if(ticket!==pronunciationSerial||e.error==='canceled'||e.error==='interrupted')return;
+  if(speechWatchdog)clearTimeout(speechWatchdog);speechWatchdog=null;
+  audioStatus('Nie udało się odtworzyć głosu '+voice.name+' ('+e.error+'). Wybierz inny głos lub zainstaluj głos English lokalnie.');audioShowHelp(true);
+ };
+ utterance.onend=()=>{if(ticket===pronunciationSerial){activeUtterance=null;if(speechWatchdog)clearTimeout(speechWatchdog);speechWatchdog=null;audioStatus('✓ Zakończono odsłuch. Lektor: '+voice.name+' ('+voice.lang+')')}};
+ try{
+  window.speechSynthesis.speak(utterance);
+  audioStatus('Uruchamiam angielski głos: '+voice.name+' ('+voice.lang+')…');
+  speechWatchdog=setTimeout(()=>{if(!started&&ticket===pronunciationSerial){audioStatus('Głos „'+voice.name+'” nie wystartował. Wybierz inny głos w ustawieniach lub zainstaluj głos English w Windows.');audioShowHelp(true)}},4500);
+ }catch(e){audioStatus('Błąd syntezy. Zmień głos lub uruchom stronę w Chrome/Edge.');audioShowHelp(true)}
+}
+function dictionaryRecordingUrl(entry,accent){
+ const phonetics=(Array.isArray(entry)?entry:[entry]).flatMap(row=>Array.isArray(row?.phonetics)?row.phonetics:[])
+   .filter(p=>typeof p?.audio==='string'&&/^https:\/\//i.test(p.audio));
+ const rule=accent==='en-GB'?/(?:^|[-_/.])(?:uk|gb)(?:[-_/.]|$)/i:/(?:^|[-_/.])us(?:[-_/.]|$)/i;
+ return (phonetics.find(p=>rule.test(p.audio))||phonetics[0])?.audio||null;
+}
+async function getRecordedUrl(text,accent){
+ const key=accent+'|'+text.toLowerCase();
+ if(pronunciationCache.has(key))return pronunciationCache.get(key);
+ if(pronunciationRequests.has(key))return pronunciationRequests.get(key);
+ const req=(async()=>{
+  let url=null;
+  try{
+   const ctrl=new AbortController(),timer=setTimeout(()=>ctrl.abort(),4500);
+   try{const response=await fetch('https://api.dictionaryapi.dev/api/v2/entries/en/'+encodeURIComponent(text),{signal:ctrl.signal});
+    if(!response.ok)throw Error('Nagranie niedostępne');
+    url=dictionaryRecordingUrl(await response.json(),accent);
+   }finally{clearTimeout(timer)}
+  }catch(e){url=null}
+  pronunciationCache.set(key,url);return url;
+ })();
+ pronunciationRequests.set(key,req);try{return await req}finally{pronunciationRequests.delete(key)}
+}
+function prefetchDailyRecordings(){
+ if(!pronPrefs.recorded)return;
+ const ids=typeof currentDay==='function'?currentDay():[];
+ // Warm up only the six daily words, not all 3805 records. Avoid re-fetching cached items.
+ for(const id of ids.slice(0,6)){
+  const w=getWord(id);if(w&&/^[A-Za-z]+(?:[-'’][A-Za-z]+)*$/.test(w.word))getRecordedUrl(w.word,pronPrefs.accent).catch(()=>{});
+ }
+}
+async function playDictionaryText(text){
+ const normalized=String(text||'').trim();if(!normalized)return;
+ if(!pronPrefs.recorded||!/^[A-Za-z]+(?:[-'’][A-Za-z]+)*$/.test(normalized)){speakText(normalized);return}
+ stopPronunciation();const ticket=pronunciationSerial,accent=pronPrefs.accent;
+ let url=pronunciationCache.get(accent+'|'+normalized.toLowerCase());
+ if(url===undefined){
+  audioStatus('Szukam nagrania „'+normalized+'”… (pierwsze wyszukiwanie wymaga internetu)');
+  url=await getRecordedUrl(normalized,accent);
+ }
+ if(ticket!==pronunciationSerial)return;
+ if(!url){
+  audioStatus('Nie ma nagrania słownikowego „'+normalized+'”. Próbuję angielskiego głosu…');
+  speakText(normalized);return;
+ }
+ const clip=new Audio(url);pronunciationAudio=clip;
+ clip.onplay=()=>{if(ticket===pronunciationSerial){audioShowHelp(false);audioStatus('▶ Nagranie słownikowe: '+normalized+' ('+(accent==='en-GB'?'preferowany brytyjski':'preferowany amerykański')+')')}};
+ clip.onended=()=>{if(ticket===pronunciationSerial){pronunciationAudio=null;audioStatus('✓ Odtworzono nagranie „'+normalized+'”.')}};
+ clip.onerror=()=>{if(ticket===pronunciationSerial){pronunciationCache.set(accent+'|'+normalized.toLowerCase(),null);pronunciationAudio=null;speakText(normalized)}};
+ try{await clip.play()}catch(err){if(ticket===pronunciationSerial){pronunciationAudio=null;
+  // A new playback user gesture is sometimes required (especially iOS after async fetch).
+  audioStatus('Przeglądarka zablokowała odtwarzanie nagrania. Kliknij 🔊 ponownie. Jeśli to nie pomoże, sprawdź lektora angielskiego.');
+  audioShowHelp(!chooseEnglishVoice());
+ }}
+}
+function playWord(id){const w=getWord(id);if(w)playDictionaryText(w.word)}
+function testPronunciation(){speakText('Hello! Welcome to English Path. Listen carefully, and repeat after me.')}
+function testDictionaryRecording(){playDictionaryText('hello')}
+
+function markLearned(id){if(state.learned[id])return;state.learned[id]=TODAY();event('learned');persist();renderEverything();toast('Świetnie! Słówko zapisane jako nauczone ✓')}
+function unlearn(id){if(!state.learned[id])return;delete state.learned[id];persist();renderEverything();toast('Słówko wróciło do listy „do nauki”.')}
+function getWord(id){return (wordGroups.get(id)||[])[0] || words.find(w=>w.id===id) || null}
+function rememberReveal(button){const card=button.closest('.word-card');card.querySelector('.revealable').classList.remove('hidden');button.remove()}
+function renderWordCard(id){
+ const w=getWord(id);
+ if(!w)return `<div class="empty">Słowo niedostępne. Połącz się z internetem i odśwież bazę.</div>`;
+ const key=w.wordKey,done=!!state.learned[key],senses=wordGroups.get(key)||[w];
+ const details=senses.map((x,i)=>`<div class="word-sense"><div class="word-pl">${senses.length>1?`<span class="tiny muted">${i+1}. ${esc(x.posPl||x.pos||'Znaczenie')}</span> · `:''}${esc(x.pl||'—')}</div><div class="word-example">${esc(nl(x.ex))}${x.ex?` <button class="audio-inline" type="button" onclick="speakText(${jsArg(nl(x.ex))})" title="Odsłuchaj zdanie">🔊 Zdanie</button>`:''}${x.ep?`<div>${esc(nl(x.ep))}</div>`:''}</div></div>`).join('');
+ return `<article class="word-card ${done?'done':''}"><div class="word-top"><span class="lvl ${w.level}">${esc(w.level)}</span><button title="Odsłuchaj wymowę słowa" aria-label="Odsłuchaj ${esc(w.word)}" class="icon-btn" onclick="playWord(${jsArg(key)})">🔊</button></div><div class="word-en">${esc(w.word)}</div><div class="word-ipa">${esc(w.ipa||w.pos||'')}${senses.length>1?` · ${senses.length} znaczenia`:''}</div><div class="revealable ${done?'':'hidden'}">${details}</div><div class="word-actions">${!done?`<button class="btn smallbtn" onclick="rememberReveal(this)">Pokaż znaczenie</button><button class="btn primary smallbtn" onclick="markLearned(${jsArg(key)})">✓ Nauczone</button>`:`<span class="done-text">✓ Nauczone</span>`}</div></article>`;
+}
+function datePolish(){return new Date().toLocaleDateString('pl-PL',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}
+function updateStats(){const day=currentDay(),count=day.filter(id=>state.learned[id]).length;const completed=count===6&&day.length===6, pct=day.length?100*count/day.length:0;document.getElementById('dateLabel').textContent=datePolish();document.getElementById('headerLevel').textContent='📘 Poziom '+currentLevel();document.getElementById('sideNum').textContent=count+'/'+day.length;document.getElementById('sideBar').style.width=pct+'%';document.getElementById('heroCount').textContent=day.length?`${count} z ${day.length} opanowanych`:'Czekamy na słówka';document.getElementById('heroBar').style.width=pct+'%';document.getElementById('heroSub').textContent=completed?'Brawo! Dzisiejsze 6 słówek opanowane. Kolejna nowa szóstka pojawi się jutro.':'Każde opanowane słówko zostaje w Twoich postępach. Nowy zestaw dostaniesz następnego dnia.';
+const snippets=[['📗',count+'/'+day.length,'Dzisiejsze słówka'],['✦',learnedCount(),'Nauczone łącznie'],['🔥',streak(),'Dni z rzędu'],['🎯',currentLevel(),'Aktualny poziom']];for(const target of ['dashboardStats','progressStats'])document.getElementById(target).innerHTML=snippets.map(([icon,v,label])=>`<div class="stat"><div class="stat-icon">${icon}</div><div class="number">${esc(v)}</div><div class="caption">${esc(label)}</div></div>`).join('')}
+function renderToday(){const day=currentDay();const mixBtn=document.getElementById('reshuffleWords');if(mixBtn){mixBtn.disabled=remoteStatus==='loading'||day.length!==6||day.some(id=>state.learned[id]);mixBtn.title=mixBtn.disabled?'Zestaw można zmienić tylko przed oznaczeniem pierwszego słówka.':'Wylosuj inne słówka z aktualnych poziomów';}document.getElementById('todayWords').innerHTML=day.length?day.map(renderWordCard).join(''):'<div class="empty">Na razie nie ma nowych słówek. Spróbuj odświeżyć bazę w zakładce Postępy.</div>';
+ prefetchDailyRecordings();
+ const earlier=Object.entries(state.days).filter(([d])=>d!==TODAY()).sort(([a],[b])=>b.localeCompare(a)).flatMap(([,list])=>list).filter(id=>!state.learned[id]);const old=[...new Set(earlier)].filter(getWord);document.getElementById('olderBox').innerHTML=old.length?`<div class="unlearned-pane"><h3>📌 Do dokończenia z poprzednich dni (${old.length})</h3><p class="small muted">Nieprzerobione słowa z wcześniejszych dni nie są losowane ponownie jako „nowe”. Możesz wrócić do nich tutaj.</p><div class="word-grid">${old.slice(0,18).map(renderWordCard).join('')}</div>${old.length>18?`<p class="small muted" style="margin-top:10px">Wyświetlono 18 z ${old.length}. Pozostałe słowa znajdziesz w bazie.</p>`:''}</div>`:'';renderDailyExtra();renderYesterdayReview();renderWeekly('miniWeekly')}
+function renderWeekly(target){const out=[];const now=new Date();for(let i=6;i>=0;i--){const d=new Date(now);d.setDate(now.getDate()-i);const key=[d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');out.push({day:d.toLocaleDateString('pl-PL',{weekday:'short'}).replace('.',''),n:at(key).learned||0,today:i===0})}let max=Math.max(...out.map(x=>x.n),6);document.getElementById(target).innerHTML=out.map(x=>`<div class="bar-col"><strong class="tiny" style="color:#4d8d80">${x.n}</strong><div class="bar ${x.today?'today':''}" style="height:${Math.max(6,x.n/max*102)}px"></div><span class="bar-day">${esc(x.day)}</span></div>`).join('')}
+function navigate(target){view=target;if(target==='today')renderToday();document.querySelectorAll('.view').forEach(e=>e.classList.toggle('active',e.id==='view-'+target));document.querySelectorAll('[data-view]').forEach(e=>e.classList.toggle('active',e.dataset.view===target));if(target==='words')renderDictionary();if(target==='grammar')renderGrammar();if(target==='phrases')renderPhrases();if(target==='practice')renderPractice();if(target==='progress')renderProgress();window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('[data-view]').forEach(e=>e.addEventListener('click',()=>navigate(e.dataset.view)));
+function renderDictionary(){
+ const q=document.getElementById('wordSearch').value.trim().toLocaleLowerCase('pl');
+ const lvl=document.getElementById('wordLevel').value,status=document.getElementById('wordStatus').value;
+ const matches=words.filter(w=>(lvl==='ALL'||w.level===lvl)&&
+  (status==='all'||(status==='learned')===!!state.learned[w.wordKey])&&
+  (!q||(w.word+' '+w.pl+' '+w.ex+' '+w.ep+' '+w.pos).toLocaleLowerCase('pl').includes(q)));
+ const sourceCount=words.filter(w=>w.source==='oxford').length;
+ document.getElementById('wordResultsCount').textContent=`Wyniki: ${matches.length} z ${words.length} wpisów (${sourceCount} oryginalnych) · ${learnedCount()} różnych słów nauczonych`;
+ document.getElementById('wordResults').innerHTML=matches.slice(0,wordLimit).map(w=>`<div class="lex-row"><span class="lvl ${w.level}">${w.level}</span><div class="lex-content"><strong>${esc(w.word)}</strong> <button class="audio-inline" type="button" onclick="playWord(${jsArg(w.wordKey)})" aria-label="Wymowa słowa ${esc(w.word)}" title="Odtwórz wymowę">🔊</button>${w.posPl||w.pos?` <span class="tiny muted">(${esc(w.posPl||w.pos)})</span>`:''}<div class="meaning">${esc(w.pl)}</div>${w.ipa?`<div class="minor">${esc(w.ipa)}</div>`:''}${w.ex?`<div class="minor" style="margin-top:4px">${esc(nl(w.ex))} <button class="audio-inline" type="button" onclick="speakText(${jsArg(nl(w.ex))})" aria-label="Odsłuchaj przykładowe zdanie">🔊 Zdanie</button>${w.ep?`<div>${esc(nl(w.ep))}</div>`:''}</div>`:''}</div><div>${state.learned[w.wordKey]?`<button class="btn smallbtn" onclick="unlearn(${jsArg(w.wordKey)})" title="Cofnij oznaczenie nauczone">✓ Znam</button>`:`<button class="btn smallbtn" onclick="markLearned(${jsArg(w.wordKey)})">+ Znam</button>`}</div></div>`).join('')||'<div class="empty">Brak wyników. Spróbuj zmienić filtry.</div>';
+ document.getElementById('showMoreWords').classList.toggle('hidden',matches.length<=wordLimit);
+}
+function loadMoreWords(){wordLimit+=36;renderDictionary()}
+for(const id of ['wordSearch','wordLevel','wordStatus'])document.getElementById(id).addEventListener(id==='wordSearch'?'input':'change',()=>{wordLimit=36;renderDictionary()});
+const GRAMMAR=[
+{name:'Present Simple',level:'A1',desc:'Czynności regularne, przyzwyczajenia, fakty i stałe sytuacje.',use:'Używamy, gdy mówimy o rutynie, faktach, rozkładach jazdy i tym, co zwykle robimy.',positive:'I/you/we/they + verb · he/she/it + verb-s',negative:'do/does + not + verb',question:'Do/Does + osoba + verb?',signals:'always, usually, often, sometimes, every day, never',example:'She works in a shop.',translation:'Ona pracuje w sklepie.',tip:'W 3. osobie l. poj. dodaj -s/-es: he plays, she watches. Po does/doesn’t użyj czasownika BEZ -s.',quiz:[['My brother ___ football every Sunday.',['play','plays','is playing'],'plays','He = 3. osoba liczby pojedynczej, dlatego plays.'],['___ you drink coffee?',['Do','Does','Are'],'Do','Dla you pytanie tworzymy z do.'],['He ___ like carrots.',['doesn’t','don’t','isn’t'],'doesn’t','He doesn’t like — po doesn’t czasownik ma formę podstawową.']]},
+{name:'Present Continuous',level:'A1',desc:'To, co dzieje się teraz, oraz sytuacje tymczasowe.',use:'Używamy do czynności odbywających się w tej chwili lub w obecnym okresie; także do zaplanowanych spotkań.',positive:'am/is/are + verb-ing',negative:'am/is/are + not + verb-ing',question:'Am/Is/Are + osoba + verb-ing?',signals:'now, right now, at the moment, currently, today',example:'I am studying English now.',translation:'Uczę się teraz angielskiego.',tip:'Nie zapomnij o am/is/are. Np. She is reading, a nie She reading.',quiz:[['Listen! Someone ___ at the door.',['knocks','is knocking','knock'],'is knocking','Listen! sygnalizuje czynność dziejącą się teraz.'],['We ___ dinner at the moment.',['are cooking','cook','cooks'],'are cooking','At the moment → am/is/are + -ing.'],['___ she working today?',['Does','Is','Do'],'Is','Is she working? — szyk pytania w Present Continuous.']]},
+{name:'Past Simple',level:'A1/A2',desc:'Zakończone zdarzenia i czynności w przeszłości.',use:'Używamy do czynności, które zaczęły i zakończyły się w przeszłości, gdy mówimy kiedy.',positive:'verb-ed / 2. forma nieregularna',negative:'did not (didn’t) + verb',question:'Did + osoba + verb?',signals:'yesterday, last week, in 2020, two days ago',example:'We visited London last year.',translation:'Odwiedziliśmy Londyn w zeszłym roku.',tip:'W pytaniach i przeczeniach po did użyj podstawowej formy: Did you go? (nie: Did you went?).',quiz:[['They ___ a film yesterday.',['watch','watched','have watched'],'watched','Yesterday → Past Simple.'],['I ___ to school last Monday.',['went','go','gone'],'went','Go jest nieregularne: go → went.'],['Did you ___ your friend?',['saw','see','seen'],'see','Po did używamy podstawowej formy czasownika.']]},
+{name:'Past Continuous',level:'A2/B1',desc:'Czynności trwające w określonym momencie przeszłości.',use:'Do opisu tła wydarzeń, dwóch czynności trwających równocześnie oraz czynności przerwanej przez inne zdarzenie.',positive:'was/were + verb-ing',negative:'was/were + not + verb-ing',question:'Was/Were + osoba + verb-ing?',signals:'while, when, at 8 p.m. yesterday, all evening',example:'I was reading when the phone rang.',translation:'Czytałem, kiedy zadzwonił telefon.',tip:'Dłuższa czynność (was reading) trwała, gdy nastąpiła krótka (rang, Past Simple).',quiz:[['I ___ when you called.',['slept','was sleeping','am sleeping'],'was sleeping','Czynność w trakcie w przeszłości = Past Continuous.'],['They ___ TV at 9 p.m.',['were watching','was watching','watch'],'were watching','They → were.'],['While she was cooking, he ___ home.',['arrives','arrived','has arrived'],'arrived','Krótsza czynność: Past Simple.']]},
+{name:'Present Perfect',level:'B1',desc:'Doświadczenia i przeszłość mająca związek z teraźniejszością.',use:'Używamy do doświadczeń bez podawania określonego momentu, wydarzeń ze skutkiem teraz i czynności rozpoczętych w przeszłości, które nadal trwają.',positive:'have/has + past participle (3. forma)',negative:'have/has + not + past participle',question:'Have/Has + osoba + past participle?',signals:'ever, never, just, already, yet, since, for',example:'She has lived here for five years.',translation:'Ona mieszka tutaj od pięciu lat.',tip:'Present Perfect: I have seen this film (nie mówię kiedy). Past Simple: I saw it yesterday (mówię kiedy).',quiz:[['I ___ never been to Canada.',['have','has','did'],'have','I have never been…'],['She has ___ her keys.',['lose','lost','losing'],'lost','Lose → lost → lost (3. forma).'],['Have you finished ___?',['yet','yesterday','last night'],'yet','Yet często występuje w pytaniach Present Perfect.']]},
+{name:'Future Simple — will',level:'A2/B1',desc:'Spontaniczne decyzje, obietnice i przewidywania.',use:'Używamy, gdy podejmujemy decyzję w chwili mówienia, obiecujemy coś lub przewidujemy przyszłość na podstawie opinii.',positive:'will + verb',negative:'will not (won’t) + verb',question:'Will + osoba + verb?',signals:'I think, probably, I hope, tomorrow, next year',example:'I think it will rain tomorrow.',translation:'Myślę, że jutro będzie padać.',tip:'Will nie zmienia się w zależności od osoby. Po will zawsze forma podstawowa: will go, will study.',quiz:[['I’m tired. I think I ___ go to bed.',['will','am','did'],'will','Spontaniczna decyzja → will.'],['She ___ probably pass the exam.',['will','is','has'],'will','Przewidywanie na podstawie opinii.'],['Will they ___ us later?',['call','called','calling'],'call','Po will używamy podstawowej formy.']]},
+{name:'Be going to',level:'A2/B1',desc:'Wcześniejsze plany, zamiary i przewidywania oparte na oznakach.',use:'Używamy, gdy mamy wcześniej ustalony zamiar albo gdy widzimy dowody, że coś się wydarzy.',positive:'am/is/are + going to + verb',negative:'am/is/are + not + going to + verb',question:'Am/Is/Are + osoba + going to + verb?',signals:'this weekend, next week, look at those clouds',example:'We are going to visit our grandparents.',translation:'Zamierzamy odwiedzić dziadków.',tip:'Will = decyzja podjęta teraz; going to = plan już istnieje. „Look at those clouds! It’s going to rain” — widzę dowody.',quiz:[['Look at the clouds! It ___ rain.',['is going to','will to','does going to'],'is going to','Widzimy oznaki nadchodzącego deszczu.'],['We ___ study tonight. It’s our plan.',['are going to','will to','is going to'],'are going to','We → are going to.'],['___ you going to travel this summer?',['Are','Will','Do'],'Are','Pytanie: Are you going to…?']]}
+];
+function renderGrammar(){document.getElementById('grammarTabs').innerHTML=GRAMMAR.map((g,i)=>`<button class="grammar-tab ${i===grammarIndex?'active':''}" onclick="chooseGrammar(${i})"><span>${state.grammarDone[i]?'✓':i+1}</span><div>${esc(g.name)}<div class="tiny muted" style="font-weight:500">${esc(g.level)}</div></div></button>`).join('');const g=GRAMMAR[grammarIndex];document.getElementById('grammarContent').innerHTML=`<span class="eyebrow">LEKCJA ${grammarIndex+1} / ${GRAMMAR.length} · ${esc(g.level)}</span><h2 style="margin-top:10px">${esc(g.name)}</h2><p class="muted">${esc(g.desc)}</p><div class="divider"></div><h3>Kiedy używamy?</h3><p>${esc(g.use)}</p><div class="grammar-example"><b>${esc(g.example)}</b> <button type="button" class="audio-inline" onclick="speakText(${jsArg(g.example)})">🔊 Odsłuchaj</button><em>${esc(g.translation)}</em></div><h3>Budowa zdań</h3><div class="three"><div class="mini-formula"><div class="eyebrow">✓ Twierdzenie</div><b>${esc(g.positive)}</b></div><div class="mini-formula"><div class="eyebrow">− Przeczenie</div><b>${esc(g.negative)}</b></div><div class="mini-formula"><div class="eyebrow">? Pytanie</div><b>${esc(g.question)}</b></div></div><p class="small" style="margin-top:18px"><b>Charakterystyczne słowa:</b> ${esc(g.signals)}</p><div class="note">💡 <b>Zapamiętaj:</b> ${esc(g.tip)}</div><div class="section-split"><div><h3>Sprawdź się</h3><p>Wybierz poprawne uzupełnienie zdania.</p></div></div><div id="grammarQuizzes">${g.quiz.map((q,i)=>`<div class="quiz"><div class="question">${i+1}. ${esc(q[0])}</div><div class="quiz-options" id="q${i}">${q[1].map((a,j)=>`<button class="option" onclick="answerGrammar(${i},${j})">${esc(a)}</button>`).join('')}</div><div id="feedback${i}" class="feedback"></div></div>`).join('')}</div><div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:20px"><button class="btn primary" onclick="completeGrammar()">✓ Oznacz temat jako przerobiony</button>${grammarIndex<GRAMMAR.length-1?`<button class="btn" onclick="chooseGrammar(${grammarIndex+1})">Następny czas →</button>`:''}</div>`}
+function chooseGrammar(i){grammarIndex=i;selectedAnswers={};renderGrammar()}
+function answerGrammar(qi,ai){let g=GRAMMAR[grammarIndex],q=g.quiz[qi],ok=q[1][ai]===q[2];const buttons=[...document.getElementById('q'+qi).querySelectorAll('button')];if(selectedAnswers[grammarIndex+'_'+qi])return;selectedAnswers[grammarIndex+'_'+qi]=true;buttons.forEach((b,i)=>{b.disabled=true;if(q[1][i]===q[2])b.classList.add('correct');else if(i===ai)b.classList.add('incorrect')});document.getElementById('feedback'+qi).textContent=(ok?'✓ Dobrze! ':'↻ Tym razem nie. ')+q[3];event('quiz');updateStats();}
+function completeGrammar(){state.grammarDone[grammarIndex]=TODAY();persist();renderGrammar();toast('Temat oznaczony jako przerobiony!')}
+const PHRASES={"phrasal":{"text":"240 phrasal verbs B1–B2 na podstawie zestawienia Speakingo. Wszystkie przykładowe zdania i polskie objaśnienia przygotowano od nowa. Kliknij 🔊, aby odsłuchać wymowę; zaznacz ✓, gdy opanujesz zwrot.","rows":[["account for","wyjaśniać przyczynę czegoś","How do you account for the missing hours?","Jak wyjaśnisz brakujące godziny?"],["act up","sprawiać kłopoty; nie działać prawidłowo","My laptop starts to act up when it gets hot.","Mój laptop zaczyna szwankować, gdy się nagrzewa."],["add up","sumować się; mieć sens","These numbers don't add up.","Te liczby się nie zgadzają."],["answer back","odpowiadać niegrzecznie","Please don't answer back when someone helps you.","Nie odpowiadaj niegrzecznie, gdy ktoś ci pomaga."],["ask around","popytać różne osoby","I'll ask around to find a good mechanic.","Popytam ludzi, żeby znaleźć dobrego mechanika."],["back up","popierać; tworzyć kopię zapasową","Back up your photos before changing phones.","Zrób kopię zdjęć przed zmianą telefonu."],["be based on","być opartym na czymś","The film is based on a true story.","Film powstał na podstawie prawdziwej historii."],["be about to","mieć właśnie coś zrobić","I was about to leave when you called.","Właśnie miałem wychodzić, gdy zadzwoniłeś."],["be into","interesować się czymś","She's really into photography these days.","Ostatnio bardzo interesuje się fotografią."],["be out","nie być w domu","Dad is out, but he'll be back soon.","Taty nie ma w domu, ale niedługo wróci."],["be up to","planować coś; zajmować się czymś","What are you up to this weekend?","Co planujesz na ten weekend?"],["beat up","pobić kogoś","The story is about a boy who gets beaten up at school.","Ta historia opowiada o chłopcu, którego pobito w szkole."],["belong to","należeć do","Does this umbrella belong to you?","Czy ten parasol należy do ciebie?"],["blend in / blend into","wtapiać się w otoczenie","He tried to blend in with the crowd.","Próbował wtopić się w tłum."],["boss around","rozkazywać komuś","Stop bossing your friends around.","Przestań rozkazywać swoim znajomym."],["break down","zepsuć się; załamać się","Our car broke down on the way home.","Samochód zepsuł nam się w drodze do domu."],["break out","wybuchnąć; nagle się zacząć","A storm broke out during our walk.","Podczas spaceru rozpętała się burza."],["break through","przebić się; pokonać barierę","The team finally broke through the difficulties.","Zespół w końcu pokonał trudności."],["break up","rozstać się; zakończyć relację","They decided to break up last month.","W zeszłym miesiącu postanowili się rozstać."],["bring back","przywrócić; przynieść z powrotem","That song brings back happy memories.","Ta piosenka przywołuje miłe wspomnienia."],["bring together","połączyć ludzi","The project brought students together.","Projekt zbliżył do siebie uczniów."],["bring up","wychowywać; poruszyć temat","She brought up an important question.","Poruszyła ważną kwestię."],["brush up on","odświeżyć sobie wiedzę","I need to brush up on my French.","Muszę odświeżyć swój francuski."],["bump into","spotkać przypadkiem","I bumped into an old neighbour yesterday.","Wczoraj przypadkiem spotkałem dawnego sąsiada."],["butt in","wtrącać się do rozmowy","It's rude to butt in while others are speaking.","Niegrzecznie jest wtrącać się, gdy inni mówią."],["call back","oddzwonić","I'll call you back after the meeting.","Oddzwonię po spotkaniu."],["call for","wymagać; domagać się","This situation calls for a quick decision.","Ta sytuacja wymaga szybkiej decyzji."],["call off","odwołać","They called off the picnic because of rain.","Odwołali piknik z powodu deszczu."],["calm down","uspokoić się","Take a minute to calm down.","Poświęć chwilę, żeby się uspokoić."],["care for","troszczyć się o kogoś","She cares for her elderly neighbour.","Opiekuje się starszą sąsiadką."],["carry on","kontynuować","Carry on reading until the end of the page.","Czytaj dalej do końca strony."],["carry out","wykonać; przeprowadzić","The class carried out a simple experiment.","Klasa przeprowadziła prosty eksperyment."],["catch up","nadrobić zaległości","I stayed after class to catch up.","Zostałem po lekcji, żeby nadrobić zaległości."],["check in","zameldować się; odprawić","We need to check in before our flight.","Musimy się odprawić przed lotem."],["check out","wymeldować się; sprawdzić","Let's check out that new library.","Sprawdźmy tę nową bibliotekę."],["check up on","sprawdzić, czy u kogoś wszystko dobrze","I'll check up on the dog later.","Później sprawdzę, czy z psem wszystko dobrze."],["cheer up","poprawić sobie lub komuś nastrój","A walk in the park might cheer you up.","Spacer po parku może poprawić ci humor."],["chill out","wyluzować; odpocząć","We like to chill out after exams.","Lubimy odpoczywać po egzaminach."],["chip in","dołożyć się do czegoś","Everyone chipped in for the birthday gift.","Wszyscy złożyli się na prezent urodzinowy."],["close down","zamknąć działalność","The old café closed down in June.","Stara kawiarnia zakończyła działalność w czerwcu."],["come across","natknąć się na coś","I came across a useful article online.","Natrafiłem w internecie na przydatny artykuł."],["come back","wrócić","When will you come back from your trip?","Kiedy wrócisz z podróży?"],["come from","pochodzić z","My grandparents come from a small village.","Moi dziadkowie pochodzą z małej wsi."],["come in","wejść do środka","Come in and take a seat.","Wejdź i usiądź."],["come out","ukazać się; wyjść na jaw","Her new book comes out in November.","Jej nowa książka ukaże się w listopadzie."],["come round","wpaść z wizytą","You can come round for tea on Saturday.","Możesz wpaść na herbatę w sobotę."],["come up with","wpaść na pomysł","Can you come up with a better title?","Potrafisz wymyślić lepszy tytuł?"],["count on","polegać na","You can count on me to be on time.","Możesz na mnie liczyć, że będę punktualnie."],["cut back on / cut down on","ograniczyć ilość czegoś / zmniejszyć zużycie czegoś","I'm trying to cut back on screen time. We should cut down on plastic bags.","Staram się ograniczać czas przed ekranem. Powinniśmy używać mniej plastikowych toreb."],["cut off","odciąć; przerwać połączenie","The storm cut off electricity to the village.","Burza odcięła wieś od prądu."],["cut out","wyciąć; przestać coś robić","Cut out the pictures and glue them here.","Wytnij obrazki i przyklej je tutaj."],["deal with","radzić sobie z czymś","How do you deal with difficult questions?","Jak radzisz sobie z trudnymi pytaniami?"],["depend on","zależeć od","The result depends on our preparation.","Wynik zależy od naszego przygotowania."],["die out","wyginąć; zanikać","Some old traditions are dying out.","Niektóre stare tradycje zanikają."],["do over","zrobić ponownie","I made a mistake and had to do it over.","Popełniłem błąd i musiałem zrobić to od nowa."],["do up","zapiąć; odnowić","Do up your jacket; it's windy.","Zapnij kurtkę, bo wieje."],["do without","obyć się bez czegoś","Can you do without your phone for an hour?","Dasz radę obyć się bez telefonu przez godzinę?"],["drag away","odciągnąć od czegoś","It was hard to drag him away from the game.","Trudno było go oderwać od gry."],["drink up","wypić do końca","Drink up your water before we leave.","Dopij wodę, zanim wyjdziemy."],["drop by","wpaść na chwilę","I'll drop by after work.","Wpadnę na chwilę po pracy."],["drop off","podwieźć i wysadzić; podrzucić","Could you drop me off near the station?","Możesz mnie wysadzić koło dworca?"],["drop out","zrezygnować z nauki lub udziału","He dropped out of the course last year.","W zeszłym roku zrezygnował z kursu."],["eat out","jeść poza domem","We eat out once a month.","Raz w miesiącu jemy na mieście."],["end up","ostatecznie znaleźć się; skończyć","We ended up walking home.","Ostatecznie wróciliśmy do domu pieszo."],["face up to","stawić czoła","It's time to face up to the problem.","Czas stawić czoła problemowi."],["fade away / fade out","stopniowo znikać / stopniowo wyciszać się","The sound slowly faded away. The music fades out at the end of the film.","Dźwięk powoli zanikał. Muzyka stopniowo cichnie pod koniec filmu."],["fall apart","rozpaść się","My old backpack is falling apart.","Mój stary plecak się rozpada."],["fall behind","zostać w tyle","She fell behind with her homework.","Zrobiła zaległości w pracy domowej."],["fall down","przewrócić się; upaść","Be careful not to fall down on the ice.","Uważaj, żeby nie przewrócić się na lodzie."],["fall for","dać się nabrać; zakochać się","I almost fell for that silly trick.","Prawie dałem się nabrać na tę sztuczkę."],["fall off","spaść z czegoś","One of the buttons fell off my coat.","Jeden guzik odpadł od płaszcza."],["fall out with","pokłócić się z kimś","I fell out with my friend over a misunderstanding.","Pokłóciłem się z przyjacielem przez nieporozumienie."],["feel for","współczuć komuś","I really feel for people who lost their homes.","Bardzo współczuję ludziom, którzy stracili domy."],["figure out","rozgryźć; zrozumieć","I finally figured out how the app works.","W końcu zrozumiałem, jak działa ta aplikacja."],["fill in / fill up","uzupełnić; wpisać / napełnić po brzegi","Fill in the gaps with the correct verbs. Please fill up the bottle with water.","Uzupełnij luki odpowiednimi czasownikami. Napełnij butelkę wodą."],["fill out","wypełnić formularz","You have to fill out this form first.","Najpierw musisz wypełnić ten formularz."],["find out","dowiedzieć się; odkryć","Let's find out what happened.","Dowiedzmy się, co się wydarzyło."],["fit in","pasować do grupy","He found it easy to fit in at his new school.","Łatwo odnalazł się w nowej szkole."],["get along with / get on with","żyć z kimś w zgodzie","I get along with everyone in my class.","Dogaduję się ze wszystkimi w klasie."],["get away with","uniknąć konsekwencji czegoś","You won't get away with cheating in a test.","Nie unikniesz konsekwencji oszukiwania na teście."],["get back","wrócić","We got back before sunset.","Wróciliśmy przed zachodem słońca."],["get down to","zabrać się za coś na serio","Let's get down to work.","Zabierzmy się do pracy."],["get on / get in / get off","wsiąść do dużego pojazdu / wsiąść do samochodu; wejść / wysiąść; zejść z czegoś","Get on the bus at the next stop. Get in the car; we're late. We get off the train in Oxford.","Wsiądź do autobusu na następnym przystanku. Wsiadaj do auta, spóźniamy się. Wysiadamy z pociągu w Oksfordzie."],["get on well with","mieć dobre relacje z kimś","She gets on well with her new colleagues.","Ma dobre relacje z nowymi współpracownikami."],["get over","dojść do siebie po czymś","It took him a week to get over the cold.","Potrzebował tygodnia, żeby dojść do siebie po przeziębieniu."],["get rid of","pozbyć się","Let's get rid of the old boxes.","Pozbądźmy się starych pudeł."],["get someone down","przygnębiać kogoś","Bad weather can get me down sometimes.","Zła pogoda potrafi mnie czasem przygnębić."],["get together","spotkać się w grupie","Let's get together on Friday evening.","Spotkajmy się w piątek wieczorem."],["get up","wstawać z łóżka","I usually get up at half past six.","Zazwyczaj wstaję o wpół do siódmej."],["give back","oddać","Remember to give back the library book.","Pamiętaj, żeby oddać książkę do biblioteki."],["give in","ustąpić; poddać się naciskom","After a long discussion, he gave in.","Po długiej dyskusji ustąpił."],["give away","rozdać; zdradzić sekret","Don't give away the surprise.","Nie zdradzaj niespodzianki."],["give up","zrezygnować; poddać się","Don't give up after one difficult lesson.","Nie poddawaj się po jednej trudnej lekcji."],["go ahead","śmiało zacząć; kontynuować","Go ahead and ask your question.","Śmiało, zadaj pytanie."],["go away","wyjechać; odejść","We are going away for the weekend.","Wyjeżdżamy na weekend."],["go back","wrócić","Let's go back to the previous exercise.","Wróćmy do poprzedniego ćwiczenia."],["go by","mijać (o czasie)","The days go by so quickly.","Dni mijają tak szybko."],["go down","spadać; obniżać się","Prices usually go down after the holidays.","Ceny zwykle spadają po świętach."],["go in","wejść do środka","You can go in when the light turns green.","Możesz wejść, gdy zapali się zielone światło."],["go off","włączyć się (alarm); zepsuć się (jedzenie)","My alarm goes off at six.","Mój budzik dzwoni o szóstej."],["go on","trwać dalej; kontynuować","The concert went on despite the rain.","Koncert trwał dalej mimo deszczu."],["go out","wychodzić; gasnąć","We rarely go out on weekdays.","Rzadko wychodzimy w dni powszednie."],["go with","pasować do czegoś","This shirt goes with your blue jacket.","Ta koszula pasuje do twojej niebieskiej kurtki."],["grow apart","oddalać się od siebie","Old friends sometimes grow apart.","Dawni przyjaciele czasami się od siebie oddalają."],["grow up","dorastać","She grew up near the sea.","Dorastała nad morzem."],["hand in","oddać (pracę, dokument)","Hand in your essay by Monday.","Oddaj wypracowanie do poniedziałku."],["hand out","rozdawać","The teacher handed out worksheets.","Nauczyciel rozdał karty pracy."],["hang on","poczekać chwilę","Hang on, I'll check the address.","Poczekaj, sprawdzę adres."],["hang out","spędzać czas ze znajomymi","We hang out in the park after school.","Spędzamy czas w parku po szkole."],["hang up","zakończyć rozmowę telefoniczną","She hung up before I could answer.","Rozłączyła się, zanim zdążyłem odpowiedzieć."],["hit it off","od razu znaleźć wspólny język","We hit it off on the first day of class.","Od pierwszego dnia zajęć świetnie się dogadywaliśmy."],["hold back","powstrzymać coś","He tried to hold back his laughter.","Próbował powstrzymać śmiech."],["hold on","zaczekać; trzymać się","Hold on for a moment, please.","Proszę chwilę zaczekać."],["hurry up","pospieszyć się","Hurry up or we'll miss the train.","Pospiesz się, bo spóźnimy się na pociąg."],["jump in","włączyć się nagle do rozmowy","Feel free to jump in with a question.","Śmiało włącz się do rozmowy z pytaniem."],["keep away from","trzymać się z dala od","Keep away from the wet paint.","Trzymaj się z dala od mokrej farby."],["keep up / keep on","utrzymywać tempo; kontynuować / robić coś nadal","Keep up the good work! She kept on practising every day.","Tak trzymaj, świetnie ci idzie! Nadal ćwiczyła każdego dnia."],["kick back","zrelaksować się","We kicked back and watched a comedy.","Odpoczęliśmy, oglądając komedię."],["kick off","rozpocząć (wydarzenie)","The meeting kicks off at nine.","Spotkanie rozpoczyna się o dziewiątej."],["kick out","wyrzucić skądś","The coach kicked him out of the team.","Trener usunął go z drużyny."],["knock down","przewrócić; zburzyć","The strong wind knocked down the fence.","Silny wiatr przewrócił płot."],["lay off","zwolnić pracowników","The company laid off ten workers.","Firma zwolniła dziesięciu pracowników."],["let down","zawieść czyjeś oczekiwania","I don't want to let my team down.","Nie chcę zawieść swojej drużyny."],["let out","wypuścić; wydać okrzyk","Please let the cat out into the garden.","Wypuść kota do ogrodu."],["lie down","położyć się","I need to lie down for a few minutes.","Muszę się położyć na kilka minut."],["live up to","sprostać oczekiwaniom","The film lived up to my expectations.","Film spełnił moje oczekiwania."],["log in / log out","zalogować się / wylogować się","Log in to see your results. Don't forget to log out on a shared computer.","Zaloguj się, aby zobaczyć wyniki. Nie zapomnij wylogować się na wspólnym komputerze."],["look after","opiekować się","Could you look after my dog tomorrow?","Możesz jutro zaopiekować się moim psem?"],["look around","rozejrzeć się","Let's look around the museum first.","Najpierw rozejrzyjmy się po muzeum."],["look down on / look up to","patrzeć z góry na innych / podziwiać; brać za wzór","Nobody should look down on beginners. I look up to my older sister.","Nikt nie powinien patrzeć z góry na początkujących. Podziwiam moją starszą siostrę."],["look for","szukać","I'm looking for a quiet place to study.","Szukam spokojnego miejsca do nauki."],["look forward to","czekać z radością na coś","I'm looking forward to the holidays.","Nie mogę się doczekać wakacji."],["look into","zbadać sprawę","The manager promised to look into the complaint.","Kierownik obiecał zbadać skargę."],["look out","uważać","Look out! There's a cyclist behind you.","Uważaj! Za tobą jedzie rowerzysta."],["make for","kierować się ku czemuś","We made for the exit after the show.","Po przedstawieniu skierowaliśmy się do wyjścia."],["make up","wymyślić; pogodzić się","We made up a story for the class.","Wymyśliliśmy opowiadanie na lekcję."],["make up for","wynagrodzić; nadrobić","I'll make up for being late by helping you.","Wynagrodzę spóźnienie, pomagając ci."],["mess up","zepsuć coś; pomieszać","I messed up the dates in my calendar.","Pomyliłem daty w kalendarzu."],["mess with","zadzierać z kimś; majstrować przy czymś","Don't mess with the settings unless you know them.","Nie zmieniaj ustawień, jeśli ich nie znasz."],["move in / move out","wprowadzić się / wyprowadzić się","Our new neighbours moved in yesterday. My cousin will move out next month.","Nowi sąsiedzi wprowadzili się wczoraj. Mój kuzyn wyprowadzi się w przyszłym miesiącu."],["move on to","przejść do kolejnego tematu","Let's move on to the next question.","Przejdźmy do kolejnego pytania."],["nail down","doprecyzować; ustalić ostatecznie","We need to nail down the date today.","Musimy dziś ostatecznie ustalić datę."],["narrow down","zawęzić wybór","We narrowed down the options to three.","Zawęziliśmy wybór do trzech opcji."],["nod off","przysnąć","I almost nodded off during the long journey.","Prawie przysnąłem podczas długiej podróży."],["nose around / nose about","węszyć; wtykać nos","Stop nosing around in my desk drawers.","Przestań grzebać w szufladach mojego biurka."],["opt for / opt to do","zdecydować się na coś","I opted for the cheaper ticket.","Wybrałem tańszy bilet."],["pass away","odejść; umrzeć","Her grandfather passed away many years ago.","Jej dziadek zmarł wiele lat temu."],["pass on","przekazać dalej","Please pass on this message to Anna.","Przekaż tę wiadomość Ani."],["pass out","zemdleć; rozdawać","The volunteers passed out leaflets.","Wolontariusze rozdawali ulotki."],["pay back","spłacić; oddać pieniądze","I'll pay you back next week.","Oddam ci pieniądze w przyszłym tygodniu."],["pay off","spłacić do końca; opłacić się","All that practice finally paid off.","Cała ta praktyka w końcu się opłaciła."],["pick up","podnieść; odebrać kogoś","I'll pick up the parcel after lunch.","Odbiorę paczkę po obiedzie."],["pin down","dokładnie ustalić","It's hard to pin down the cause of the delay.","Trudno dokładnie ustalić przyczynę opóźnienia."],["piss off","potocznie: zirytować kogoś (wulgarne)","His rude comment really pissed me off.","Jego niegrzeczny komentarz naprawdę mnie zdenerwował."],["plug in","podłączyć do gniazdka","Plug in the charger before you leave.","Podłącz ładowarkę, zanim wyjdziesz."],["point out","wskazać; zwrócić uwagę","She pointed out a spelling mistake.","Wskazała błąd ortograficzny."],["print out","wydrukować","Could you print out the timetable?","Możesz wydrukować plan zajęć?"],["pull back","wycofać się","The company pulled back from the project.","Firma wycofała się z projektu."],["pull down","zburzyć; ściągnąć w dół","They're going to pull down the old shed.","Zamierzają rozebrać starą szopę."],["pull over","zjechać na pobocze","The driver pulled over to check the map.","Kierowca zjechał na pobocze, żeby sprawdzić mapę."],["put back","odłożyć na miejsce","Put the dictionary back on the shelf.","Odłóż słownik na półkę."],["put down","położyć; zapisać; skrytykować","Put down your bag and come inside.","Odłóż torbę i wejdź do środka."],["put forward","przedstawić propozycję","He put forward an interesting idea.","Przedstawił ciekawy pomysł."],["put on","założyć ubranie","Put on a warm sweater.","Załóż ciepły sweter."],["put out","zgasić","The firefighters put out the fire quickly.","Strażacy szybko ugasili pożar."],["put off","przełożyć na później","Don't put off your homework until Sunday.","Nie odkładaj pracy domowej do niedzieli."],["put up with","znosić; tolerować","I can't put up with this noise anymore.","Nie mogę już znieść tego hałasu."],["ring back","oddzwonić","Can you ring me back this afternoon?","Możesz oddzwonić do mnie po południu?"],["rip off","naciągnąć na pieniądze","That shop ripped me off.","Ten sklep naciągnął mnie na pieniądze."],["round up / round down","zaokrąglić w górę / zaokrąglić w dół","Round up the result to the next whole number. Round down to the nearest ten.","Zaokrąglij wynik w górę do kolejnej liczby całkowitej. Zaokrąglij w dół do najbliższej dziesiątki."],["rule out","wykluczyć możliwość","We can't rule out a change of plans.","Nie możemy wykluczyć zmiany planów."],["run away","uciec","The puppy ran away through the open gate.","Szczeniak uciekł przez otwartą bramę."],["run into","spotkać przypadkiem; natrafić","I ran into my teacher at the market.","Przypadkiem spotkałem nauczyciela na targu."],["run out of","wyczerpać zapas","We ran out of paper during the lesson.","Skończył nam się papier podczas lekcji."],["run over","przejechać po czymś","Be careful not to run over that toy.","Uważaj, żeby nie przejechać po tej zabawce."],["screw up","potocznie: poważnie coś zepsuć","I screwed up my first attempt, so I tried again.","Zawaliłem pierwszą próbę, więc spróbowałem ponownie."],["sell out","wyprzedać cały zapas","The tickets sold out in an hour.","Bilety wyprzedały się w godzinę."],["set off","wyruszyć","We set off early to avoid traffic.","Wyruszyliśmy wcześnie, żeby ominąć korki."],["be set on","być zdecydowanym na coś","She's set on studying medicine.","Jest zdecydowana studiować medycynę."],["set up","utworzyć; zorganizować","They set up a study group.","Założyli grupę do nauki."],["settle down","uspokoić się; osiąść","It took the children a few minutes to settle down.","Dzieci potrzebowały kilku minut, żeby się uspokoić."],["show around","oprowadzić po miejscu","I'll show you around our school.","Oprowadzę cię po naszej szkole."],["show off","popisywać się","He likes to show off his new tricks.","Lubi popisywać się nowymi sztuczkami."],["show up","pojawić się","Everyone showed up on time.","Wszyscy pojawili się punktualnie."],["shut up","potocznie: zamilknąć (nieuprzejme)","He told his friend to shut up.","Kazał koledze się zamknąć."],["sleep in","spać dłużej niż zwykle","I like to sleep in on Saturdays.","Lubię pospać dłużej w soboty."],["slow down","zwolnić tempo","Please slow down; I can't keep up.","Zwolnij, proszę, nie nadążam."],["speak up","mówić głośniej","Could you speak up a little?","Możesz mówić trochę głośniej?"],["speed up","przyspieszyć","A shortcut could speed up the process.","Skrót mógłby przyspieszyć proces."],["stand back","odsunąć się","Stand back so everyone can see the screen.","Odsuń się, żeby wszyscy widzieli ekran."],["stand down","ustąpić z funkcji","The club president decided to stand down.","Prezes klubu postanowił ustąpić."],["stand out","wyróżniać się","Her colourful drawing really stands out.","Jej kolorowy rysunek naprawdę się wyróżnia."],["stand up to","przeciwstawić się","It's important to stand up to unfair treatment.","Ważne jest, by przeciwstawiać się niesprawiedliwemu traktowaniu."],["start over","zacząć od początku","Let's start over with a clean page.","Zacznijmy od początku na czystej kartce."],["stay away from","unikać; trzymać się z dala","Stay away from the broken glass.","Trzymaj się z dala od rozbitego szkła."],["stay behind","zostać po innych","She stayed behind to ask a question.","Została po zajęciach, żeby o coś zapytać."],["stay in / stay out","zostać w domu / zostać poza domem","We decided to stay in and cook dinner. We stayed out until the stars appeared.","Postanowiliśmy zostać w domu i ugotować kolację. Zostaliśmy na zewnątrz, aż pojawiły się gwiazdy."],["stay out of","nie mieszać się do czegoś","Stay out of their argument.","Nie wtrącaj się do ich kłótni."],["stay over / sleep over","nocować u kogoś / nocować poza domem","Can my cousin stay over this weekend? She's going to sleep over at her friend's place.","Czy mój kuzyn może u nas przenocować w weekend? Zamierza nocować u koleżanki."],["stay up","nie kłaść się spać","We stayed up to finish the puzzle.","Nie poszliśmy spać, żeby dokończyć puzzle."],["stick to","trzymać się czegoś","Let's stick to the original plan.","Trzymajmy się pierwotnego planu."],["stock up","zrobić zapasy","We stocked up on notebooks before school started.","Zrobiliśmy zapas zeszytów przed początkiem szkoły."],["sum up","podsumować","Could you sum up your idea in one sentence?","Możesz podsumować swój pomysł jednym zdaniem?"],["switch on / switch off","włączyć urządzenie / wyłączyć urządzenie","Switch on the lamp when it gets dark. Switch off the lights before you go.","Włącz lampę, gdy zrobi się ciemno. Zgaś światło przed wyjściem."],["take aback","zaskoczyć","I was taken aback by the sudden news.","Zaskoczyła mnie ta nagła wiadomość."],["take after","być podobnym do krewnego","She takes after her father.","Jest podobna do swojego ojca."],["take back","cofnąć słowa; oddać","I take back what I said yesterday.","Cofam to, co powiedziałem wczoraj."],["take down","zanotować; zdjąć","Take down the address in your notebook.","Zapisz adres w zeszycie."],["take off","wystartować; zdjąć ubranie","The plane took off ten minutes late.","Samolot wystartował dziesięć minut później."],["take on","przyjąć odpowiedzialność; zatrudnić","She took on a new role at work.","Podjęła się nowej roli w pracy."],["take out","wyjąć; zabrać","Take out your notebooks, please.","Wyjmijcie zeszyty, proszę."],["take over","przejąć","My colleague will take over the project.","Mój współpracownik przejmie projekt."],["take to","polubić coś od razu","He took to his new hobby quickly.","Szybko polubił swoje nowe hobby."],["talk into","namówić kogoś do czegoś","They talked me into joining the club.","Namówili mnie, żebym dołączył do klubu."],["tell apart","odróżnić jedno od drugiego","I can't tell the twins apart.","Nie potrafię odróżnić bliźniaków."],["tell off","skarcić kogoś","The teacher told him off for being late.","Nauczyciel skarcił go za spóźnienie."],["think over","przemyśleć","Think over the offer before you decide.","Przemyśl ofertę przed podjęciem decyzji."],["throw away","wyrzucić","Don't throw away those useful notes.","Nie wyrzucaj tych przydatnych notatek."],["throw in","dorzucić jako dodatek","The shop threw in a free notebook.","Sklep dorzucił darmowy zeszyt."],["tie up","zająć komuś czas; związać","I'm tied up with homework this afternoon.","Dziś po południu jestem zajęty pracą domową."],["touch down","wylądować","Our plane touched down at midnight.","Nasz samolot wylądował o północy."],["try on","przymierzyć","Can I try on these shoes?","Mogę przymierzyć te buty?"],["try out","wypróbować","Let's try out the new app.","Wypróbujmy nową aplikację."],["turn away","odprawić; nie wpuścić","The museum turned away visitors after closing time.","Muzeum nie wpuszczało już gości po zamknięciu."],["turn down","odrzucić; ściszyć","She turned down the invitation politely.","Uprzejmie odrzuciła zaproszenie."],["turn on / turn off","włączyć / wyłączyć","Turn on the radio, please. Please turn off your phone during the film.","Włącz radio, proszę. Wyłącz telefon podczas filmu."],["turn out","okazać się","The test turned out to be easier than expected.","Test okazał się łatwiejszy, niż oczekiwano."],["turn up","pojawić się; podgłośnić","He turned up just before the start.","Pojawił się tuż przed rozpoczęciem."],["wait out","przeczekać","We waited out the storm indoors.","Przeczekaliśmy burzę w budynku."],["wake up","obudzić się","I wake up early during the week.","W dni powszednie budzę się wcześnie."],["warm up","rozgrzać się","We always warm up before training.","Zawsze rozgrzewamy się przed treningiem."],["wash up","pozmywać naczynia","I'll wash up after dinner.","Pozmywam po kolacji."],["watch out","uważać na coś","Watch out for the low doorway.","Uważaj na niskie przejście."],["wind down","wyciszyć się; odpocząć","I listen to music to wind down at night.","Słucham muzyki, żeby wyciszyć się wieczorem."],["work on","pracować nad czymś","I'm working on my English pronunciation.","Pracuję nad angielską wymową."],["work out","rozwiązać; ćwiczyć","We worked out a solution together.","Wspólnie znaleźliśmy rozwiązanie."],["wrap up","zakończyć i podsumować","Let's wrap up the meeting with a summary.","Zakończmy spotkanie podsumowaniem."],["write down","zapisać","Write down three new words each day.","Zapisuj codziennie trzy nowe słowa."],["zip up","zapiąć na zamek","Zip up your coat before going outside.","Zapnij płaszcz na zamek przed wyjściem."],["zoom in / zoom out","przybliżyć obraz / oddalić obraz","Zoom in to read the tiny text. Zoom out to see the whole map.","Przybliż obraz, żeby przeczytać drobny tekst. Oddal obraz, żeby zobaczyć całą mapę."]]},"idioms":{"text":"Idiomy z codziennej pracy, decyzji, emocji i rozmów. Każdy zwrot pojawia się tylko raz; ucz się go z tłumaczeniem i przykładem.","rows":[["a piece of cake","bułka z masłem","The test was a piece of cake.","Test był bułką z masłem."],["break the ice","przełamać pierwsze lody","A simple question helped break the ice.","Proste pytanie pomogło przełamać lody."],["once in a blue moon","bardzo rzadko","I eat fast food once in a blue moon.","Bardzo rzadko jem fast food."],["hit the nail on the head","trafić w sedno","You hit the nail on the head.","Trafiłeś w sedno."],["under the weather","czuć się niewyraźnie","I feel a bit under the weather today.","Dziś czuję się trochę niewyraźnie."],["the best of both worlds","najlepsze z obu światów","Working from home gives her the best of both worlds.","Praca w domu pozwala jej korzystać z zalet obu rozwiązań."],["cost an arm and a leg","kosztować fortunę","That new laptop costs an arm and a leg.","Ten nowy laptop kosztuje fortunę."],["on the same page","rozumieć się, mieć wspólne ustalenia","Let’s make sure we are on the same page.","Upewnijmy się, że wszyscy rozumiemy to tak samo."],["better late than never","lepiej późno niż wcale","You finally started learning — better late than never.","W końcu zacząłeś naukę — lepiej późno niż wcale."],["call it a day","zakończyć na dziś","We finished the project, so let’s call it a day.","Skończyliśmy projekt, więc zakończmy na dziś."],["keep an eye on","mieć coś na oku","Can you keep an eye on my bag?","Możesz mieć oko na moją torbę?"],["go the extra mile","zrobić więcej, niż trzeba","She always goes the extra mile to help others.","Zawsze robi więcej, niż trzeba, żeby pomóc innym."],["bite the bullet","zacisnąć zęby i zrobić coś trudnego","I was nervous about the conversation, but I bit the bullet and started it.","Denerwowałem się rozmową, ale zacisnąłem zęby i ją rozpocząłem."],["the ball is in your court","teraz twój ruch; decyzja należy do ciebie","I've shared my suggestion; now the ball is in your court.","Przedstawiłem swoją propozycję; teraz decyzja należy do ciebie."],["cut corners","iść na skróty kosztem jakości","The team refused to cut corners when checking the results.","Zespół odmówił chodzenia na skróty podczas sprawdzania wyników."],["back to the drawing board","wrócić do punktu wyjścia i zacząć planowanie od nowa","The first design failed, so it's back to the drawing board.","Pierwszy projekt się nie udał, więc musimy zacząć planowanie od nowa."],["burn the midnight oil","uczyć się lub pracować do późnej nocy","She burned the midnight oil to finish her presentation.","Pracowała do późnej nocy, żeby skończyć prezentację."],["see eye to eye","zgadzać się z kimś","We don't always see eye to eye about films.","Nie zawsze zgadzamy się co do filmów."],["on the fence","być niezdecydowanym","I'm still on the fence about which course to choose.","Nadal nie wiem, który kurs wybrać."],["get cold feet","stracić odwagę w ostatniej chwili","He got cold feet before speaking in public.","Stracił odwagę tuż przed wystąpieniem publicznym."],["break a leg","powodzenia, połamania nóg","Break a leg in the school play tonight!","Powodzenia w dzisiejszym szkolnym przedstawieniu!"],["spill the beans","wygadać sekret","Don't spill the beans about the surprise party.","Nie wygadaj sekretu o przyjęciu niespodziance."],["let the cat out of the bag","przypadkiem zdradzić tajemnicę","I accidentally let the cat out of the bag about the gift.","Przez przypadek wygadałem tajemnicę dotyczącą prezentu."],["take it with a grain of salt","traktować coś z rezerwą","Take online rumours with a grain of salt.","Traktuj internetowe plotki z rezerwą."]]},"collocations":{"text":"Naturalne połączenia słów z JęzykiObce.pl i Chatschool (zachowano też wcześniejszy zestaw). Powtarzające się kolokacje połączono w pojedyncze fiszki. Wszystkie zdania przykładowe są autorskie.","rows":[["make a decision","podjąć decyzję","We need to make a decision today.","Musimy dziś podjąć decyzję."],["do homework","odrabiać pracę domową","I do my homework after lunch.","Odrabiam pracę domową po obiedzie."],["take a break","zrobić przerwę","Let’s take a short break.","Zróbmy krótką przerwę."],["have a shower","brać prysznic","I usually have a shower in the evening.","Zwykle biorę prysznic wieczorem."],["catch a bus","zdążyć na autobus","We must leave now to catch the bus.","Musimy już wyjść, żeby zdążyć na autobus."],["pay attention","uważać, zwracać uwagę","Please pay attention to the instructions.","Zwróć uwagę na instrukcje."],["strong coffee","mocna kawa","He likes strong coffee in the morning.","Lubi rano mocną kawę."],["heavy rain","ulewny deszcz","The game was cancelled because of heavy rain.","Mecz odwołano z powodu ulewnego deszczu."],["keep a promise","dotrzymać obietnicy","I always try to keep my promises.","Zawsze staram się dotrzymywać obietnic."],["make progress","robić postępy","You are making great progress in English.","Robisz duże postępy w angielskim."],["take notes","robić notatki","I take notes during every lesson.","Robię notatki na każdej lekcji."],["gain experience","zdobywać doświadczenie","This project helped me gain experience.","Ten projekt pomógł mi zdobyć doświadczenie."],["meet a deadline","dotrzymać terminu","We have to meet the deadline on Friday.","Musimy dotrzymać terminu w piątek."],["solve a problem","rozwiązać problem","Let’s solve the problem together.","Rozwiążmy problem razem."],["miss the bus","spóźnić się na autobus","I missed the bus, so I walked to school.","Spóźniłem się na autobus, więc poszedłem do szkoły pieszo."],["boil water","zagotować wodę","Boil some water before making tea.","Zagotuj trochę wody przed zrobieniem herbaty."],["take a shower","wziąć prysznic","I take a shower after football practice.","Biorę prysznic po treningu piłki nożnej."],["make a mistake","popełnić błąd","Everybody makes mistakes when learning.","Każdy popełnia błędy podczas nauki."],["run out of time","zabraknąć czasu","We ran out of time during the quiz.","Zabrakło nam czasu podczas quizu."],["pick up the phone","odebrać telefon","Could you pick up the phone for me?","Możesz odebrać za mnie telefon?"],["turn on the light","włączyć światło","Please turn on the light in the kitchen.","Proszę, włącz światło w kuchni."],["break the rules","złamać zasady","The team lost points for breaking the rules.","Drużyna straciła punkty za złamanie zasad."],["catch a cold","przeziębić się","I caught a cold during the winter break.","Przeziębiłem się podczas ferii zimowych."],["get married","wziąć ślub","My cousins got married last spring.","Moi kuzyni wzięli ślub zeszłej wiosny."],["lose weight","schudnąć","The vet explained that the dog needed to lose weight for its health.","Weterynarz wyjaśnił, że pies musi schudnąć ze względów zdrowotnych."],["save money","oszczędzać pieniądze","I save money for a new bicycle.","Oszczędzam pieniądze na nowy rower."],["have fun","dobrze się bawić","We always have fun at the science club.","Zawsze dobrze się bawimy w klubie naukowym."],["keep a secret","dochować tajemnicy","You can trust her to keep a secret.","Możesz jej zaufać, że dochowa tajemnicy."],["do the dishes","zmywać naczynia","I usually do the dishes after supper.","Zwykle zmywam naczynia po kolacji."],["give advice","udzielić rady","My teacher gave me useful advice.","Mój nauczyciel udzielił mi przydatnej rady."],["take a nap","zdrzemnąć się","I took a short nap after the journey.","Zdrzemnąłem się po podróży."],["take a picture","zrobić zdjęcie","Can you take a picture of this building?","Możesz zrobić zdjęcie tego budynku?"],["take a seat","usiąść","Please take a seat near the window.","Proszę usiąść przy oknie."],["take care of","opiekować się; zadbać o","My sister takes care of our cat when I am away.","Moja siostra opiekuje się naszym kotem, kiedy mnie nie ma."],["take a test","przystąpić do testu","We will take a test on Monday.","W poniedziałek napiszemy test."],["take a while","potrwać chwilę","Finding the answer may take a while.","Znalezienie odpowiedzi może trochę potrwać."],["take a chance","skorzystać z okazji; zaryzykować","She decided to take a chance and enter the competition.","Postanowiła spróbować swoich sił w konkursie."],["take a look","rzucić okiem","Take a look at my new drawing.","Rzuć okiem na mój nowy rysunek."],["have an idea","mieć pomysł","I have an idea for our group project.","Mam pomysł na nasz projekt grupowy."],["have breakfast","jeść śniadanie","We have breakfast together every Saturday.","W każdą sobotę jemy razem śniadanie."],["have lunch","jeść obiad","I usually have lunch at one o'clock.","Zwykle jem obiad o trzynastej."],["have dinner","jeść kolację; jeść obiad","They have dinner with their grandparents on Sundays.","W niedziele jedzą obiad z dziadkami."],["have a headache","boleć głowa","I have a headache, so I need some rest.","Boli mnie głowa, więc potrzebuję odpoczynku."],["have a problem","mieć problem","If you have a problem, ask for help.","Jeśli masz problem, poproś o pomoc."],["have a cup of tea","wypić filiżankę herbaty","Would you like to have a cup of tea?","Masz ochotę na filiżankę herbaty?"],["have a cup of coffee","wypić filiżankę kawy","My parents have a cup of coffee after lunch.","Moi rodzice piją filiżankę kawy po obiedzie."],["have a listen","posłuchać","Have a listen to this recording.","Posłuchaj tego nagrania."],["have a laugh","pośmiać się","We had a laugh about the funny story.","Pośmialiśmy się z zabawnej historii."],["have a bath","wziąć kąpiel","The baby had a bath before bedtime.","Dziecko zostało wykąpane przed snem."],["have a day off","mieć wolny dzień","My dad has a day off tomorrow.","Tata ma jutro wolny dzień."],["have a party","urządzić przyjęcie","We are having a party on Friday.","W piątek urządzamy przyjęcie."],["get a job","dostać pracę","She hopes to get a job at the library.","Ma nadzieję dostać pracę w bibliotece."],["get drunk","upić się","He regretted getting drunk at the party.","Żałował, że upił się na przyjęciu."],["get ready","przygotować się","Get ready for the school trip.","Przygotuj się na szkolną wycieczkę."],["get divorced","rozwieść się","They got divorced several years ago.","Rozwiedli się kilka lat temu."],["get fired","zostać zwolnionym z pracy","He got fired for repeatedly ignoring safety rules.","Został zwolniony za wielokrotne lekceważenie zasad bezpieczeństwa."],["get wet","zmoknąć","You will get wet without an umbrella.","Zmokniesz bez parasola."],["get hungry","zgłodnieć","I get hungry after swimming.","Po pływaniu robię się głodny."],["get in trouble","wpaść w kłopoty","You could get in trouble for missing the deadline.","Możesz wpaść w kłopoty przez niedotrzymanie terminu."],["get dressed","ubrać się","She got dressed and went downstairs.","Ubrała się i zeszła na dół."],["do a favour","wyświadczyć przysługę","Could you do me a favour?","Czy możesz wyświadczyć mi przysługę?"],["do research","prowadzić badania; zbierać informacje","We need to do research before writing our report.","Musimy zebrać informacje przed napisaniem raportu."],["do exercise","ćwiczyć; wykonywać ćwiczenia","I do exercise to stay active and healthy.","Ćwiczę, żeby być aktywnym i zdrowym."],["do the cleaning","sprzątać","We do the cleaning on Saturday mornings.","Sprzątamy w sobotnie poranki."],["do the cooking","gotować","My brother does the cooking on weekends.","Mój brat gotuje w weekendy."],["do your makeup","robić makijaż","She does her makeup in front of the mirror.","Robi makijaż przed lustrem."],["do the shopping","robić zakupy","We do the shopping on Thursday evenings.","Robimy zakupy w czwartkowe wieczory."],["do your best","dać z siebie wszystko","Just do your best in the competition.","Po prostu daj z siebie wszystko w zawodach."],["do nothing","nic nie robić","Sometimes it is nice to do nothing all afternoon.","Czasami przyjemnie jest nic nie robić przez całe popołudnie."],["do a course","odbyć kurs","She wants to do a course in web design.","Chce odbyć kurs projektowania stron."],["make a call","zadzwonić","I need to make a call before class.","Muszę zadzwonić przed zajęciami."],["make a cup of tea","zrobić filiżankę herbaty","I'll make a cup of tea for my grandmother.","Zrobię babci filiżankę herbaty."],["make a cup of coffee","zrobić filiżankę kawy","Dad made a cup of coffee before work.","Tata zrobił kawę przed pracą."],["make food","przygotować jedzenie","We made food for the picnic.","Przygotowaliśmy jedzenie na piknik."],["make your bed","pościelić łóżko","Make your bed before you leave your room.","Pościel łóżko przed wyjściem z pokoju."],["make sense","mieć sens","That explanation makes sense now.","To wyjaśnienie ma teraz sens."],["make plans","robić plany","We made plans for our summer holiday.","Zrobiliśmy plany na wakacje."],["make an offer","złożyć ofertę","The company made an offer for the property.","Firma złożyła ofertę kupna nieruchomości."],["access to","dostęp do","All pupils have access to the online library.","Wszyscy uczniowie mają dostęp do biblioteki internetowej."],["difficulty with","trudność z czymś","I have difficulty with this pronunciation.","Mam trudność z tą wymową."],["cure for","lekarstwo na","Scientists are searching for a cure for the illness.","Naukowcy szukają lekarstwa na tę chorobę."],["photograph of","zdjęcie czegoś","This is a photograph of our class.","To zdjęcie naszej klasy."],["difficulty in","trudność w czymś","She had difficulty in understanding the instructions.","Miała trudność ze zrozumieniem instrukcji."],["too late to","za późno, by","It is too late to change the train ticket.","Jest już za późno, żeby zmienić bilet kolejowy."],["gentle with","delikatny wobec","Please be gentle with this small animal.","Proszę, obchodź się delikatnie z tym małym zwierzęciem."],["terrible at","kiepski w czymś","I'm terrible at remembering names.","Kiepsko zapamiętuję imiona."],["related to","spokrewniony z; związany z","Is she related to your neighbour?","Czy ona jest spokrewniona z twoim sąsiadem?"],["sick of","mieć czegoś dość","I'm sick of hearing the same excuse.","Mam dość słuchania tej samej wymówki."],["mad at","zły na kogoś","He was mad at me for being late.","Był na mnie zły za spóźnienie."],["listen to","słuchać czegoś","I listen to an English podcast on the bus.","Słucham angielskiego podcastu w autobusie."],["hear from","otrzymać wiadomość od","I hope to hear from you soon.","Mam nadzieję, że wkrótce dostanę od ciebie wiadomość."],["prepared for","przygotowany na","Are you prepared for tomorrow's lesson?","Czy jesteś przygotowany na jutrzejszą lekcję?"],["contribute to","dołożyć się do; przyczynić się do","Everyone contributed to the class project.","Wszyscy dołożyli się do projektu klasowego."],["happen to","przydarzyć się komuś; stać się z czymś","What happened to your old bike?","Co stało się z twoim starym rowerem?"],["afford to","móc sobie na coś pozwolić","We cannot afford to miss the last train.","Nie możemy sobie pozwolić na spóźnienie się na ostatni pociąg."],["can't stand","nie znosić","I can't stand loud music when I study.","Nie znoszę głośnej muzyki podczas nauki."],["copy and paste","kopiować i wkleić","Copy and paste the address into the form.","Skopiuj i wklej adres do formularza."],["can't help but","nie móc się powstrzymać od","I can't help but smile when I see my dog.","Nie mogę powstrzymać uśmiechu, gdy widzę mojego psa."],["behave properly","zachowywać się właściwie","Please behave properly during the presentation.","Proszę, zachowuj się odpowiednio podczas prezentacji."],["divide equally","podzielić równo","Let's divide the work equally.","Podzielmy pracę po równo."],["eat quickly","jeść szybko","I sometimes eat quickly when I'm in a hurry.","Czasem jem szybko, gdy się spieszę."],["go smoothly","przebiegać sprawnie","I hope the exam goes smoothly.","Mam nadzieję, że egzamin przebiegnie sprawnie."],["whisper softly","szeptać cicho","She whispered softly so she wouldn't wake the baby.","Szepnęła cicho, żeby nie obudzić dziecka."],["make an appointment","umówić spotkanie lub wizytę","I need to make an appointment with my tutor.","Muszę umówić spotkanie z korepetytorem."],["a quick shower","szybki prysznic","I'll have a quick shower before breakfast.","Wezmę szybki prysznic przed śniadaniem."],["remember vividly","wyraźnie pamiętać","I remember vividly my first day at school.","Wyraźnie pamiętam swój pierwszy dzień w szkole."],["fully aware","w pełni świadomy","We are fully aware of the risks.","Jesteśmy w pełni świadomi ryzyka."],["panic attacks","ataki paniki","The article explains how panic attacks can affect daily life.","Artykuł wyjaśnia, jak ataki paniki mogą wpływać na codzienne życie."],["birth certificate","akt urodzenia","Please bring a copy of your birth certificate.","Proszę przynieść kopię aktu urodzenia."],["excruciating pain","niezwykle silny ból","He needed medical help because of excruciating pain.","Potrzebował pomocy medycznej z powodu niezwykle silnego bólu."]]}};
+const PHRASE_LEGACY_REDIRECTS={"collocations:get together": "phrasal:get together", "collocations:depend on": "phrasal:depend on"};
+function migrateOldPhraseProgress(){
+  let changed=false;
+  state.phraseLearned??={};
+  for(const [previous,current] of Object.entries(PHRASE_LEGACY_REDIRECTS)){
+    if(state.phraseLearned[previous] && !state.phraseLearned[current]){
+      state.phraseLearned[current]=state.phraseLearned[previous];changed=true;
+    }
+  }
+  if(changed)persist();
+}
+function phraseKey(category,label){return category+':'+label.toLowerCase()}
+
+function renderPhrases(){
+ document.querySelectorAll('#phraseTabs [data-category]').forEach(e=>e.classList.toggle('active',e.dataset.category===phraseCategory));
+ const d=PHRASES[phraseCategory], all=d.rows, learned=state.phraseLearned||{}, q=phraseQuery.trim().toLocaleLowerCase('pl-PL');
+ const shown=all.map((r,i)=>({r,i})).filter(({r})=>(!q || r.slice(0,2).some(v=>v.toLocaleLowerCase('pl-PL').includes(q)))&&(phraseFilter==='all'||(phraseFilter==='done')===!!learned[phraseKey(phraseCategory,r[0])]));
+ const done=all.filter(r=>learned[phraseKey(phraseCategory,r[0])]).length;
+ document.getElementById('phraseIntro').textContent=d.text;
+ document.getElementById('phraseCounter').textContent=`${shown.length} wyników · ${done}/${all.length} nauczonych`;
+ document.getElementById('phraseCards').innerHTML=shown.slice(0,phraseLimit).map(({r:[en,pl,ex,ep],i})=>{
+  const mastered=!!learned[phraseKey(phraseCategory,en)];
+  return `<div class="phrase-card ${mastered?'completed':''}"><div class="phrase-number">${phraseCategory==='phrasal'?'Phrasal verb':'Zwrot'} ${i+1}/${all.length}</div><div style="display:flex;justify-content:space-between;gap:10px"><strong>${esc(en)}</strong><div class="phrase-actions"><button class="icon-btn" onclick="speakPhrase(${i})" aria-label="Odtwórz wymowę ${esc(en)}">🔊</button><button class="phrase-mark" aria-pressed="${mastered}" onclick="togglePhraseLearned(${i})">${mastered?'✓ Nauczone':'+ Umiem'}</button></div></div><div class="translation">${esc(pl)}</div><div class="example"><b>${esc(ex)}</b> <button class="audio-inline" type="button" onclick="speakText(${jsArg(ex)})" aria-label="Odsłuchaj zdanie przykładowe">🔊 Zdanie</button><br><span class="muted">${esc(ep)}</span></div></div>`
+ }).join('')||'<p class="muted">Brak pasujących zwrotów. Spróbuj zmienić wyszukiwanie lub filtr.</p>';
+ document.getElementById('morePhrases').classList.toggle('hidden',shown.length<=phraseLimit);
+}
+function speakPhrase(i){const s=PHRASES[phraseCategory].rows[i][0].split(' / ')[0];speakText(s)}
+function togglePhraseLearned(i){const row=PHRASES[phraseCategory].rows[i];if(!row)return;state.phraseLearned??={};let key=phraseKey(phraseCategory,row[0]);if(state.phraseLearned[key])delete state.phraseLearned[key];else state.phraseLearned[key]=TODAY();persist();renderPhrases()}
+function loadMorePhrases(){phraseLimit+=30;renderPhrases()}
+document.querySelectorAll('#phraseTabs button').forEach(e=>e.addEventListener('click',()=>{phraseCategory=e.dataset.category;phraseQuery='';phraseFilter='all';phraseLimit=30;document.getElementById('phraseSearch').value='';document.getElementById('phraseFilter').value='all';renderPhrases()}));
+document.getElementById('phraseSearch').addEventListener('input',e=>{phraseQuery=e.target.value;phraseLimit=30;renderPhrases()});
+document.getElementById('phraseFilter').addEventListener('change',e=>{phraseFilter=e.target.value;phraseLimit=30;renderPhrases()});
+const SCENARIOS=[
+{emoji:'☕',title:'W kawiarni',desc:'Zamawianie napoju i płacenie.',task:'Zamów herbatę i kanapkę. Zapytaj o cenę. Napisz 2–3 zdania po angielsku.',model:'Could I have a tea and a sandwich, please? How much is it altogether?',dialog:[['Staff','Hi! What can I get for you?','Cześć! Co podać?'],['You','Could I have a coffee, please?','Czy mogę prosić kawę?'],['Staff','Of course. Anything else?','Oczywiście. Coś jeszcze?'],['You','No, thank you. How much is it?','Nie, dziękuję. Ile to kosztuje?']]},
+{emoji:'🧳',title:'Podróż',desc:'Pytanie o drogę i transport.',task:'Jesteś na dworcu. Zapytaj, skąd odjeżdża pociąg do Londynu oraz o której godzinie.',model:'Excuse me, which platform does the train to London leave from? What time does it depart?',dialog:[['You','Excuse me, where is platform four?','Przepraszam, gdzie jest peron czwarty?'],['Staff','Go straight ahead and turn left.','Idź prosto i skręć w lewo.'],['You','Thank you. Does the train leave at ten?','Dziękuję. Czy pociąg odjeżdża o dziesiątej?'],['Staff','Yes, at ten fifteen.','Tak, o dziesiątej piętnaście.']]},
+{emoji:'📚',title:'Szkoła i nauka',desc:'Pytania, zadania i rozmowa o nauce.',task:'Powiedz, że uczysz się angielskiego codziennie i chcesz poprawić mówienie.',model:'I study English every day because I want to improve my speaking skills.',dialog:[['Friend','What are you studying?','Czego się uczysz?'],['You','I am learning English.','Uczę się angielskiego.'],['Friend','How often do you practise?','Jak często ćwiczysz?'],['You','I practise a little every day.','Ćwiczę trochę każdego dnia.']]},
+{emoji:'💼',title:'W pracy',desc:'Przedstawienie się i uzgadnianie zadań.',task:'Przedstaw się nowemu współpracownikowi i zapytaj, kiedy zaczyna się spotkanie.',model:'Hello, my name is Alex. It is nice to meet you. What time does the meeting start?',dialog:[['You','Hello, I am new here.','Cześć, jestem tutaj nowy.'],['Colleague','Welcome! Do you need any help?','Witaj! Potrzebujesz pomocy?'],['You','Yes, where is the meeting room?','Tak, gdzie jest sala konferencyjna?'],['Colleague','It is on the first floor.','Jest na pierwszym piętrze.']]},
+{emoji:'🛍️',title:'Na zakupach',desc:'Rozmiary, ceny i zwroty.',task:'Zapytaj sprzedawcę, czy ma ten produkt w innym kolorze i ile kosztuje.',model:'Excuse me, do you have this in a different colour? How much does it cost?',dialog:[['You','Excuse me, how much is this jacket?','Przepraszam, ile kosztuje ta kurtka?'],['Staff','It is forty pounds.','Kosztuje czterdzieści funtów.'],['You','Can I try it on?','Mogę ją przymierzyć?'],['Staff','Yes, of course.','Tak, oczywiście.']]},
+{emoji:'👋',title:'Small talk',desc:'Luźna rozmowa i umawianie się.',task:'Zapytaj znajomego, jak minął weekend, i opowiedz, co robiłeś wczoraj.',model:'How was your weekend? I went for a walk yesterday and watched a film in the evening.',dialog:[['You','Hi! How was your weekend?','Cześć! Jak minął weekend?'],['Friend','It was great. I visited my family.','Było świetnie. Odwiedziłem rodzinę.'],['You','That sounds nice!','Brzmi miło!'],['Friend','What did you do?','A ty co robiłeś?']]}
+];
+function renderPractice(){document.getElementById('scenarioTabs').innerHTML=SCENARIOS.map((x,i)=>`<button class="scenario ${i===scenarioIndex?'active':''}" onclick="chooseScenario(${i})"><span class="emoji">${x.emoji}</span><strong>${esc(x.title)}</strong><span class="small muted">${esc(x.desc)}</span></button>`).join('');let x=SCENARIOS[scenarioIndex];document.getElementById('scenarioTitle').textContent=x.title;document.getElementById('scenarioDesc').textContent=x.desc;document.getElementById('scenarioTask').textContent=x.task;document.getElementById('scenarioDialog').innerHTML=x.dialog.map(([speaker,en,pl])=>`<div class="script-line"><span class="script-role ${speaker==='You'?'you':''}">${esc(speaker)}</span><div class="script-body"><div class="english">${esc(en)} <button type="button" class="audio-inline" onclick="speakText(${jsArg(en)})" title="Odsłuchaj tę wypowiedź">🔊</button></div><div class="polish">${esc(pl)}</div></div></div>`).join('');document.getElementById('practiceAnswer').value=state.practice[scenarioIndex]||'';document.getElementById('practiceModel').textContent=x.model;document.getElementById('practiceModel').classList.add('hidden');document.getElementById('modelButton').textContent='Pokaż przykład'}
+function chooseScenario(i){scenarioIndex=i;renderPractice()}
+function speakDialogue(){speakText(SCENARIOS[scenarioIndex].dialog.map(row=>row[1]).join(' ... '))}
+function toggleModel(){const el=document.getElementById('practiceModel');el.classList.toggle('hidden');document.getElementById('modelButton').textContent=el.classList.contains('hidden')?'Pokaż przykład':'Ukryj przykład'}
+function savePractice(){const value=document.getElementById('practiceAnswer').value.trim();if(!value){toast('Najpierw wpisz swoją wypowiedź.');return}state.practice[scenarioIndex]=value;event('practice');persist();toast('Zapisano Twoją wypowiedź ✓');updateStats()}
+function renderProgress(){renderWeekly('progressWeekly');document.getElementById('levelProgress').innerHTML=LEVELS.map(l=>{const list=[...new Set(words.filter(w=>w.level===l).map(w=>w.wordKey))],done=list.filter(k=>state.learned[k]).length,pct=list.length?done/list.length*100:0;return `<div class="level-row"><strong>${l}</strong><div class="progress-line"><span style="width:${pct}%"></span></div><span class="small">${done}/${list.length}</span></div>`}).join('');const d=new Date(),items=[];for(let i=27;i>=0;i--){let t=new Date(d);t.setDate(d.getDate()-i);const key=[t.getFullYear(),String(t.getMonth()+1).padStart(2,'0'),String(t.getDate()).padStart(2,'0')].join('-'),a=at(key),n=a.learned+a.quiz+a.practice;items.push({date:key,n})}document.getElementById('activityCalendar').innerHTML=items.map(x=>`<div title="${x.date}: ${x.n} aktywności" style="background:${x.n===0?'#f3f5f2':x.n>=6?'#2a907b':x.n>=3?'#78c7a5':'#cae8d5'};border-radius:8px;padding:10px 2px;text-align:center;color:${x.n>=6?'white':'#748e86'};font-size:11px;font-weight:800">${Number(x.date.slice(-2))}</div>`).join('')}
+function exportProgress(){const blob=new Blob([JSON.stringify({application:'English Path',version:2,exported:new Date().toISOString(),state,pronunciation:pronPrefs},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='english-path-postep-'+TODAY()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);toast('Plik kopii zapasowej przygotowany.')}
+document.getElementById('importFile').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{const obj=JSON.parse(await file.text());if(!obj || obj.application!=='English Path'||!obj.state||typeof obj.state.learned!=='object'||typeof obj.state.days!=='object')throw Error('Nieprawidłowy format');if(!confirm('Zastąpić bieżący postęp danymi z pliku?'))return;state={...initialState(),...obj.state};if(obj.pronunciation&&typeof obj.pronunciation==='object'){pronPrefs={...pronunciationDefaults,...obj.pronunciation};try{localStorage.setItem(PRON_KEY,JSON.stringify(pronPrefs))}catch(e){}initPronunciation()}migrateOldPhraseProgress();persist();ensureToday();renderEverything();toast('Postęp zaimportowany pomyślnie.')}catch(err){toast('Nie udało się wczytać postępów.')}finally{e.target.value=''}});
+document.getElementById('importWords').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{const parsed=normalizeRemote(JSON.parse(await file.text()));remoteStatus='full';try{localStorage.setItem(CACHE,JSON.stringify(parsed))}catch(err){}setWords(parsed);toast('Baza słówek zaimportowana!')}catch(err){toast('Plik nie ma formatu bazy data.json.')}finally{e.target.value=''}});
+function resetProgress(){if(!confirm('Czy na pewno wyczyścić cały postęp, historię lekcji i ćwiczenia? Tego nie da się cofnąć bez kopii zapasowej.'))return;state=initialState();persist();ensureToday();renderEverything();toast('Postęp wyczyszczony.')}
+function renderEverything(){updateStats();renderToday();if(view==='words')renderDictionary();if(view==='grammar')renderGrammar();if(view==='phrases')renderPhrases();if(view==='practice')renderPractice();if(view==='progress')renderProgress()}
+// Avoid assigning a day's six words from the tiny starter list before trying the full online source.
+migrateOldPhraseProgress();
+initPronunciation();
+(function init(){try{const cached=JSON.parse(localStorage.getItem(CACHE));if(Array.isArray(cached)&&cached.length>=3000){remoteStatus='full';setWords(cached);retryDownload();return}}catch(e){}retryDownload();renderGrammar();renderPhrases();renderPractice()})();
+// If the tab remains open at midnight, refresh the new lesson automatically on interaction.
+let lastDate=TODAY();document.addEventListener('visibilitychange',()=>{if(!document.hidden&&TODAY()!==lastDate){lastDate=TODAY();ensureToday();renderEverything()}});
+</script>
+<script type="module">
+/* ==============================================================
+   FIREBASE — UZUPEŁNIJ TYLKO WARTOŚCI W OBIEKCIE firebaseConfig!
+   Firebase Console → Ustawienia projektu → Twoje aplikacje → Web.
+   Nie wpisuj tu haseł ani kluczy kont serwisowych.
+   ============================================================== */
+const firebaseConfig = {
+  apiKey: "AIzaSyA7yfCdxxCeShLdPpjZV58jyPCinAOHuO0",
+  authDomain: "english-learn-51be7.firebaseapp.com",
+  projectId: "english-learn-51be7",
+  storageBucket: "english-learn-51be7.firebasestorage.app",
+  messagingSenderId: "27536858942",
+  appId: "1:27536858942:web:352cbae26d29cb7c11166f"
+};
+const configOk = [firebaseConfig.apiKey, firebaseConfig.projectId, firebaseConfig.appId, firebaseConfig.messagingSenderId].every(x=>x && !x.includes('WPISZ_')) && !firebaseConfig.authDomain.includes('WPISZ_');
+const statusEl = document.getElementById('cloudStatus');
+const loginBtn = document.getElementById('cloudLogin');
+const logoutBtn = document.getElementById('cloudLogout');
+const retryBtn = document.getElementById('cloudRetry');
+function cloudStatus(message,kind='warn'){
+  statusEl.innerHTML='<span class="cloud-indicator '+kind+'"></span>'+esc(message);
+}
+if(!configOk){
+  cloudStatus('Tryb lokalny. Aby włączyć chmurę, uzupełnij firebaseConfig w tym HTML i opublikuj go na GitHub Pages.','warn');
+  loginBtn.disabled=true;
+}else if(location.protocol!=='https:' && location.hostname!=='localhost'){
+  cloudStatus('Otwórz stronę z adresu https:// GitHub Pages, a nie jako plik na dysku. Dotychczasowa nauka nadal działa lokalnie.','warn');
+  loginBtn.disabled=true;
+}else{
+ try {
+  const SDK='12.19.0';
+  const {initializeApp}=await import('https://www.gstatic.com/firebasejs/'+SDK+'/firebase-app.js');
+  const {getAuth,GoogleAuthProvider,signInWithPopup,signOut,onAuthStateChanged,setPersistence,browserLocalPersistence}=await import('https://www.gstatic.com/firebasejs/'+SDK+'/firebase-auth.js');
+  const {getFirestore,doc,getDocFromServer,setDoc,onSnapshot,runTransaction,serverTimestamp}=await import('https://www.gstatic.com/firebasejs/'+SDK+'/firebase-firestore.js');
+  const app=initializeApp(firebaseConfig);
+  const auth=getAuth(app),db=getFirestore(app);
+  const provider=new GoogleAuthProvider();
+  await setPersistence(auth,browserLocalPersistence);
+  let currentUser=null,documentRef=null,listenStop=null,ready=false,writing=false;
+  let pending=[],timer=null,recorded=copy(state),switchId=0,lastRemote=null;
+  const markerKey='english_path_cloud_user_id';
+  const backupKey='english_path_before_first_cloud_import_v1';
+  function copy(v){return JSON.parse(JSON.stringify(v))}
+  function object(v){return v !== null && typeof v==='object' && !Array.isArray(v)}
+  function eq(a,b){return JSON.stringify(a)===JSON.stringify(b)}
+  // Zmiany zapisujemy jako osobne operacje na konkretnych polach.
+  // Dzięki temu nowe postępy z dwóch urządzeń nie nadpisują całego dokumentu.
+  function diff(oldValue,newValue,path=[],out=[]){
+    if(eq(oldValue,newValue))return out;
+    if(object(oldValue)&&object(newValue)){
+      for(const key of new Set([...Object.keys(oldValue),...Object.keys(newValue)])){
+        if(!(key in newValue))out.push({path:[...path,key],remove:true});
+        else if(!(key in oldValue))diff(object(newValue[key])?{}:undefined,newValue[key],[...path,key],out);
+        else diff(oldValue[key],newValue[key],[...path,key],out);
+      }
+    }else if(newValue===undefined){out.push({path,remove:true})}
+    else out.push({path,value:copy(newValue)});
+    return out;
+  }
+  function applyOps(original,ops){
+    const dest=object(original)?copy(original):initialState();
+    for(const op of ops){
+      if(!op.path.length)continue;
+      let target=dest;
+      for(let i=0;i<op.path.length-1;i++){
+        if(!object(target[op.path[i]]))target[op.path[i]]={};
+        target=target[op.path[i]];
+      }
+      const key=op.path[op.path.length-1];
+      if(op.remove)delete target[key];else target[key]=copy(op.value);
+    }
+    return {...initialState(),...dest};
+  }
+  function hasRealProgress(s){return ['learned','phraseLearned','grammarDone','practice','dailyChecks','dailyReviews'].some(k=>Object.keys(s[k]||{}).length>0)
+    || Object.keys(s.activity||{}).length>0 || Object.keys(s.days||{}).some(x=>x!==TODAY());}
+  function mergeProgress(remote,local){
+    const out={...initialState(),...copy(remote||{})};
+    for(const k of ['learned','phraseLearned','grammarDone','practice','dailyChecks','dailyReviews','dailyExtras','shuffleCounts']){
+      out[k]={...(local[k]||{}),...(out[k]||{})};
+    }
+    // Pierwszeństwo istniejącego planu lekcji w chmurze: nie przydzielamy nowych słów drugi raz.
+    out.days={...(local.days||{}),...(out.days||{})};
+    out.activity={...(local.activity||{}),...(out.activity||{})};
+    for(const [d,a] of Object.entries(local.activity||{})){
+      if(out.activity[d] && a && typeof a==='object'){
+        out.activity[d]={...a,...out.activity[d]};
+        for(const kind of ['learned','quiz','practice'])out.activity[d][kind]=Math.max(Number(a[kind]||0),Number((remote.activity||{})[d]?.[kind]||0));
+      }
+    }
+    for(const k of ['dailyChecks','dailyReviews'])for(const [date,entry] of Object.entries(local[k]||{})){
+      if(object(entry) && object((remote[k]||{})[date]))out[k][date]={...entry,...remote[k][date]};
+    }
+    return out;
+  }
+  function useStateFromCloud(data){
+    const next=applyOps(data,pending);
+    state={...initialState(),...next};
+    try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}
+    recorded=copy(state);
+    if(remoteStatus!=='loading'){ensureToday();renderEverything()}
+  }
+  window.englishCloudOnPersist=()=>{
+    const ops=diff(recorded,state);
+    recorded=copy(state);
+    if(!ready||!ops.length)return;
+    pending.push(...ops);
+    cloudStatus('Zapis lokalny wykonany. Synchronizuję zmiany…','warn');
+    schedule(650);
+  };
+  function schedule(delay){if(timer)clearTimeout(timer);timer=setTimeout(()=>{timer=null;flush()},delay)}
+  async function flush(){
+    if(!ready||!documentRef||writing||!navigator.onLine||!pending.length)return;
+    writing=true;
+    const count=pending.length,ops=pending.slice(0,count),uid=currentUser?.uid;
+    cloudStatus('Wysyłam zmiany do chmury…','warn');
+    try{
+      await runTransaction(db,async tr=>{
+        const snap=await tr.get(documentRef);
+        const remote=snap.exists()&&object(snap.data()?.state)?snap.data().state:initialState();
+        tr.set(documentRef,{state:applyOps(remote,ops),updatedAt:serverTimestamp()});
+      });
+      if(uid!==currentUser?.uid)return;
+      pending.splice(0,count);
+      cloudStatus('Zapisano w chmurze ✓ — '+(currentUser.email||'konto Google'),'ok');
+    }catch(err){
+      cloudStatus('Zmiany zapisane lokalnie, ale chmura chwilowo niedostępna: '+(err.code||err.message||'błąd')+'. Spróbuj ponownie.','error');
+    }finally{
+      writing=false;
+      if(pending.length&&navigator.onLine)schedule(2400);
+    }
+  }
+  window.englishCloudReconnect=()=>{
+    if(!currentUser){cloudStatus('Zaloguj się przez Google, aby połączyć postępy.','warn');return}
+    if(!ready){startUser(currentUser);return}
+    flush();
+  };
+  window.englishCloudSignIn=async()=>{
+    if(location.protocol!=='https:'&&location.hostname!=='localhost'){
+      cloudStatus('Logowanie działa na opublikowanej stronie HTTPS, nie w pliku file://.','warn');return;
+    }
+    loginBtn.disabled=true;
+    try{await signInWithPopup(auth,provider)}catch(err){
+      const reason=err.code==='auth/unauthorized-domain'?'Dodaj domenę strony do Authentication → Settings → Authorized domains.':
+        err.code==='auth/popup-blocked'?'Przeglądarka blokuje wyskakujące okno. Zezwól na pop-upy dla tej strony.':
+        err.code==='auth/popup-closed-by-user'?'Okno logowania zostało zamknięte.':err.code||err.message;
+      cloudStatus('Nie udało się zalogować: '+reason,'error');
+    }finally{loginBtn.disabled=false}
+  };
+  window.englishCloudSignOut=async()=>{
+    if(pending.length){await flush();if(pending.length&&!confirm('Część postępów jest jeszcze tylko lokalna. Wylogować mimo to?'))return}
+    await signOut(auth);
+  };
+  async function startUser(user){
+    const turn=++switchId;
+    ready=false;pending=[];writing=false;
+    if(listenStop){listenStop();listenStop=null}
+    currentUser=user;documentRef=doc(db,'users',user.uid);
+    loginBtn.hidden=true;logoutBtn.hidden=false;retryBtn.hidden=false;
+    cloudStatus('Połączono konto. Pobieram Twoje postępy z chmury…','warn');
+    try{
+      const snap=await getDocFromServer(documentRef);
+      if(turn!==switchId)return;
+      const localCopy=copy(state);
+      const oldUid=localStorage.getItem(markerKey);
+      let remote=snap.exists()&&object(snap.data()?.state)?snap.data().state:null;
+      // Bezpieczna kopia lokalnych wyników przed pierwszym pobraniem stanu z chmury.
+      if(!localStorage.getItem(backupKey) && hasRealProgress(localCopy)){
+        try{localStorage.setItem(backupKey,JSON.stringify({application:'English Path',state:localCopy}))}catch(e){}
+      }
+      if(!remote){
+        await setDoc(documentRef,{state:localCopy,updatedAt:serverTimestamp()});
+        remote=localCopy;
+        cloudStatus('Pierwsza synchronizacja ukończona. Twoje dotychczasowe postępy są w chmurze ✓','ok');
+      }else if(oldUid===user.uid){
+        // Po przerwie bez internetu przenieś tylko lokalne zmiany od ostatniej potwierdzonej synchronizacji.
+        let oldBaseline=null;try{oldBaseline=JSON.parse(localStorage.getItem('english_path_cloud_baseline_'+user.uid))}catch(e){}
+        if(object(oldBaseline)){
+          const offlineChanges=diff(oldBaseline,localCopy);
+          if(offlineChanges.length){
+            cloudStatus('Znalazłem lokalne zmiany od ostatniego połączenia. Łączę je z chmurą…','warn');
+            remote=await runTransaction(db,async tr=>{
+              const current=await tr.get(documentRef);
+              const combined=applyOps(current.exists()?current.data().state:initialState(),offlineChanges);
+              tr.set(documentRef,{state:combined,updatedAt:serverTimestamp()});
+              return combined;
+            });
+          }
+        }
+      }else if(hasRealProgress(localCopy) && oldUid!==user.uid){
+        if(confirm('Masz zapisane lokalne postępy na tym urządzeniu. Czy połączyć je z już istniejącymi postępami w chmurze? Zalecamy wcześniejszy eksport kopii.')){
+          remote=await runTransaction(db,async tr=>{
+            const current=await tr.get(documentRef);
+            const combined=mergeProgress(current.exists()?current.data().state:initialState(),localCopy);
+            tr.set(documentRef,{state:combined,updatedAt:serverTimestamp()});
+            return combined;
+          });
+        }
+      }
+      if(turn!==switchId)return;
+      localStorage.setItem(markerKey,user.uid);
+      try{localStorage.setItem('english_path_cloud_baseline_'+user.uid,JSON.stringify(remote))}catch(e){}
+      pending=[];
+      state={...initialState(),...copy(remote)};
+      try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}
+      recorded=copy(state);
+      ready=true;
+      cloudStatus('Zsynchronizowano ✓ — '+(user.email||'konto Google'),'ok');
+      if(remoteStatus!=='loading'){ensureToday();renderEverything()}
+      listenStop=onSnapshot(documentRef,{includeMetadataChanges:false},snapshot=>{
+        if(turn!==switchId||!ready||!snapshot.exists()||!object(snapshot.data().state))return;
+        lastRemote=copy(snapshot.data().state);
+        try{localStorage.setItem('english_path_cloud_baseline_'+user.uid,JSON.stringify(lastRemote))}catch(e){}
+        useStateFromCloud(lastRemote);
+      },err=>cloudStatus('Nie mogę odbierać aktualizacji: '+(err.code||err.message)+'; zapis lokalny nadal działa.','error'));
+    }catch(err){
+      if(turn===switchId){ready=false;cloudStatus('Nie udało się połączyć z bazą Firestore ('+(err.code||err.message)+'). Sprawdź reguły, połączenie i kliknij „Ponów”.','error')}
+    }
+  }
+  onAuthStateChanged(auth,user=>{
+    if(user){startUser(user)}else{
+      ++switchId;ready=false;currentUser=null;documentRef=null;pending=[];
+      if(listenStop){listenStop();listenStop=null}
+      loginBtn.hidden=false;logoutBtn.hidden=true;retryBtn.hidden=true;
+      cloudStatus('Tryb lokalny. Zaloguj się przez Google, aby synchronizować postęp między urządzeniami.','warn');
+    }
+  });
+  window.addEventListener('online',()=>{if(currentUser && !ready)startUser(currentUser);else schedule(100)});
+  window.addEventListener('pagehide',()=>{if(pending.length){/* Zmiany zostają w localStorage. Przy stabilnym połączeniu zapisywane są na bieżąco. */}});
+ } catch(err){
+   console.error('English Path Firebase setup:',err);
+   cloudStatus('Nie udało się załadować Firebase. Sprawdź połączenie internetowe i ustawienia przeglądarki.','error');
+   loginBtn.disabled=true;
+ }
+}
+</script>
+</body>
+</html>
